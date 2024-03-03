@@ -1,0 +1,47 @@
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accesed
+"GET /app/ HTTP/1.1" 200 22
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accesed
+"GET /app/ HTTP/1.1" 200 22
+"GET /app/about HTTP/1.1" 301 0
+Error in "about" page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /app/about/ HTTP/1.1" 200 24
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipe_site\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipe_site\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Error in "about" page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /app/about/ HTTP/1.1" 200 24
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipe_site\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipe_site\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Mi\dj_fpi_GB\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-02-26 21:13:01,524 autoreload 13664 10852 Watching for file changes with StatReloader
+ERROR 2024-02-26 21:13:08,547 views 13664 9156 Error in "about" page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_fpi_GB\recipe_site\recipes\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-02-26 21:13:08,549 basehttp 13664 9156 "GET /app/about/ HTTP/1.1" 200 24
