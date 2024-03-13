@@ -1,4 +1,4 @@
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.shortcuts import render, redirect
 
@@ -25,3 +25,15 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'user/login.html', {'form': form})
+
+
+def logout_view(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('home')
+    else:
+        return render(request, 'user/logout.html')
+
+
+def mock():
+    return 0
