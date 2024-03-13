@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
+</head>
+<body>
+    <header>
+        <!-- navigation bar -->
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- footer -->
+    </footer>
+
+    {% block extrabody %}{% endblock %}
+</body>
+</html>
