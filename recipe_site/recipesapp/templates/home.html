@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Добро пожаловать на наш сайт рецептов!</h1>
+<h2>5 случайных рецептов:</h2>
+
+<div class="recipes">
+    {% for recipe in recipes %}
+    <div class="recipe">
+        <a href="{% url 'recipe_detail' recipe.id %}">
+            {% if recipe.image %}
+            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="recipe-image">
+            {% else %}
+            Изображение отсутствует
+            {% endif %}
+            <h2>{{ recipe.title }}</h2>
+            <p>{{ recipe.description|truncatewords:10 }}</p>
+        </a>
+    </div>
+    {% empty %}
+    <p>Нет рецептов.</p>
+    {% endfor %}
+</div>
+{% endblock %}

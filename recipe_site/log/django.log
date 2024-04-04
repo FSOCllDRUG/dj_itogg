@@ -45,3 +45,2243 @@ Traceback (most recent call last):
              ~~^~~
 ZeroDivisionError: division by zero
 INFO 2024-02-26 21:13:08,549 basehttp 13664 9156 "GET /app/about/ HTTP/1.1" 200 24
+INFO 2024-03-14 01:22:38,168 autoreload 5524 21624 Watching for file changes with StatReloader
+INFO 2024-03-14 01:27:32,192 autoreload 14836 6540 Watching for file changes with StatReloader
+WARNING 2024-03-14 01:27:36,224 log 14836 308 Not Found: /
+WARNING 2024-03-14 01:27:36,225 basehttp 14836 308 "GET / HTTP/1.1" 404 2168
+WARNING 2024-03-14 01:27:36,661 log 14836 308 Not Found: /favicon.ico
+WARNING 2024-03-14 01:27:36,662 basehttp 14836 308 "GET /favicon.ico HTTP/1.1" 404 2219
+WARNING 2024-03-14 01:27:45,766 log 14836 19328 Not Found: /register
+WARNING 2024-03-14 01:27:45,767 basehttp 14836 19328 "GET /register HTTP/1.1" 404 2210
+INFO 2024-03-14 01:28:13,331 autoreload 14836 6540 C:\Users\Mi\dj_itog\recipe_site\recipe_site\urls.py changed, reloading.
+INFO 2024-03-14 01:28:13,985 autoreload 17592 15412 Watching for file changes with StatReloader
+INFO 2024-03-14 01:28:16,157 basehttp 17592 19948 "GET /register HTTP/1.1" 301 0
+ERROR 2024-03-14 01:28:16,270 log 17592 19212 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 15, in register
+    return render(request, 'user/register.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-03-14 01:28:16,277 basehttp 17592 19212 "GET /register/ HTTP/1.1" 500 128000
+INFO 2024-03-14 01:31:20,628 autoreload 17592 15412 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-14 01:31:21,432 autoreload 8796 23488 Watching for file changes with StatReloader
+INFO 2024-03-14 01:31:23,535 basehttp 8796 19048 "GET /register/ HTTP/1.1" 200 1841
+INFO 2024-03-14 01:32:59,172 autoreload 8796 23488 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-14 01:32:59,864 autoreload 13252 12148 Watching for file changes with StatReloader
+INFO 2024-03-14 01:33:02,961 basehttp 13252 9908 "GET /register/ HTTP/1.1" 200 2186
+ERROR 2024-03-14 01:33:37,981 log 13252 3860 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 9, in register
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\query.py", line 659, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+ERROR 2024-03-14 01:33:37,988 basehttp 13252 3860 "POST /register/ HTTP/1.1" 500 148060
+INFO 2024-03-14 01:33:53,656 basehttp 13252 3740 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-14 01:34:34,884 basehttp 13252 19924 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-14 01:34:42,090 basehttp 13252 24392 "GET /login HTTP/1.1" 301 0
+INFO 2024-03-14 01:34:42,104 basehttp 13252 7840 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-14 01:38:29,182 autoreload 13252 12148 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:38:29,866 autoreload 14316 20720 Watching for file changes with StatReloader
+INFO 2024-03-14 01:40:04,817 autoreload 14316 20720 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:40:05,774 autoreload 5184 16972 Watching for file changes with StatReloader
+INFO 2024-03-14 01:41:45,710 autoreload 5184 16972 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:41:46,765 autoreload 4804 15228 Watching for file changes with StatReloader
+INFO 2024-03-14 01:43:56,659 autoreload 4804 15228 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:43:57,370 autoreload 7796 21944 Watching for file changes with StatReloader
+INFO 2024-03-14 01:43:57,569 basehttp 7796 13520 "GET /login/ HTTP/1.1" 200 933
+ERROR 2024-03-14 01:44:05,312 log 7796 13520 Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 32, in logout_view
+    return redirect('home')
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+ERROR 2024-03-14 01:44:05,315 basehttp 7796 13520 "GET /logout/ HTTP/1.1" 500 84537
+INFO 2024-03-14 01:49:13,777 autoreload 7796 21944 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 01:49:14,444 autoreload 11240 12804 Watching for file changes with StatReloader
+INFO 2024-03-14 01:49:23,112 autoreload 11240 12804 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 01:49:23,807 autoreload 13692 10652 Watching for file changes with StatReloader
+INFO 2024-03-14 01:49:54,769 autoreload 5832 4524 Watching for file changes with StatReloader
+ERROR 2024-03-14 01:49:56,682 log 5832 25888 Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 36, in logout_view
+    return render(request, 'logout.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: logout.html
+ERROR 2024-03-14 01:49:56,686 basehttp 5832 25888 "GET /logout/ HTTP/1.1" 500 81180
+ERROR 2024-03-14 01:49:57,785 log 5832 19868 Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 36, in logout_view
+    return render(request, 'logout.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: logout.html
+ERROR 2024-03-14 01:49:57,786 basehttp 5832 19868 "GET /logout/ HTTP/1.1" 500 81180
+ERROR 2024-03-14 01:51:54,363 log 5832 20124 Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 36, in logout_view
+    return render(request, 'logout.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: logout.html
+ERROR 2024-03-14 01:51:54,366 basehttp 5832 20124 "GET /logout/ HTTP/1.1" 500 81180
+INFO 2024-03-14 01:52:10,456 autoreload 5832 4524 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 01:52:11,124 autoreload 8428 4048 Watching for file changes with StatReloader
+ERROR 2024-03-14 01:52:13,466 log 8428 23756 Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 36, in logout_view
+    return render(request, 'user/logout.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+ERROR 2024-03-14 01:52:13,473 basehttp 8428 23756 "GET /logout/ HTTP/1.1" 500 144953
+INFO 2024-03-14 01:53:17,046 autoreload 8428 4048 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:53:17,702 autoreload 21936 25352 Watching for file changes with StatReloader
+INFO 2024-03-14 01:53:57,185 autoreload 21936 25352 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-14 01:53:57,877 autoreload 4176 7224 Watching for file changes with StatReloader
+INFO 2024-03-14 01:54:01,140 basehttp 4176 18964 "GET /logout/ HTTP/1.1" 200 675
+INFO 2024-03-14 01:54:03,119 basehttp 4176 18964 "POST /logout/ HTTP/1.1" 302 0
+ERROR 2024-03-14 01:54:03,185 log 4176 18964 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-14 01:54:03,186 basehttp 4176 18964 "GET / HTTP/1.1" 500 63776
+INFO 2024-03-14 21:27:43,713 autoreload 22504 2724 Watching for file changes with StatReloader
+WARNING 2024-03-14 21:27:50,403 log 22504 25424 Not Found: /favicon.ico
+WARNING 2024-03-14 21:27:50,411 basehttp 22504 25424 "GET /favicon.ico HTTP/1.1" 404 2784
+INFO 2024-03-14 21:27:56,972 basehttp 22504 25424 "GET /logout/ HTTP/1.1" 200 724
+INFO 2024-03-14 21:27:59,346 basehttp 22504 25424 "POST /logout/ HTTP/1.1" 302 0
+ERROR 2024-03-14 21:27:59,407 log 22504 25424 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-14 21:27:59,409 basehttp 22504 25424 "GET / HTTP/1.1" 500 63776
+INFO 2024-03-14 21:28:15,331 autoreload 22504 2724 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 21:28:16,187 autoreload 12140 6664 Watching for file changes with StatReloader
+INFO 2024-03-14 21:28:18,730 basehttp 12140 24864 "GET /logout/ HTTP/1.1" 200 724
+INFO 2024-03-14 21:28:19,680 basehttp 12140 24864 "POST /logout/ HTTP/1.1" 302 0
+ERROR 2024-03-14 21:28:19,748 log 12140 24864 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+       ^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'get'
+ERROR 2024-03-14 21:28:19,750 basehttp 12140 24864 "GET / HTTP/1.1" 500 66774
+INFO 2024-03-14 21:28:50,668 autoreload 12140 6664 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 21:28:51,465 autoreload 19068 9756 Watching for file changes with StatReloader
+INFO 2024-03-14 21:31:48,698 autoreload 19068 9756 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-14 21:31:49,601 autoreload 21924 25056 Watching for file changes with StatReloader
+INFO 2024-03-14 21:37:07,163 autoreload 21924 25056 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 21:37:08,977 autoreload 24844 19440 Watching for file changes with StatReloader
+INFO 2024-03-14 21:43:16,939 autoreload 24844 19440 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 21:43:18,485 autoreload 25512 20692 Watching for file changes with StatReloader
+INFO 2024-03-14 21:48:57,160 autoreload 25512 20692 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-14 21:48:57,881 autoreload 13516 12028 Watching for file changes with StatReloader
+INFO 2024-03-14 21:56:09,843 autoreload 13516 12028 C:\Users\Mi\dj_itog\recipe_site\recipesapp\models.py changed, reloading.
+INFO 2024-03-14 21:56:10,546 autoreload 19224 13212 Watching for file changes with StatReloader
+INFO 2024-03-14 21:56:26,604 autoreload 19224 13212 C:\Users\Mi\dj_itog\recipe_site\recipesapp\models.py changed, reloading.
+INFO 2024-03-14 21:56:27,293 autoreload 5724 2764 Watching for file changes with StatReloader
+INFO 2024-03-14 21:56:32,689 autoreload 5724 2764 C:\Users\Mi\dj_itog\recipe_site\recipesapp\models.py changed, reloading.
+INFO 2024-03-14 21:56:33,365 autoreload 17448 15316 Watching for file changes with StatReloader
+INFO 2024-03-14 21:56:48,298 autoreload 17448 15316 C:\Users\Mi\dj_itog\recipe_site\recipesapp\models.py changed, reloading.
+INFO 2024-03-14 21:56:49,178 autoreload 16364 25900 Watching for file changes with StatReloader
+INFO 2024-03-14 21:58:40,045 autoreload 16364 25900 C:\Users\Mi\dj_itog\recipe_site\recipesapp\models.py changed, reloading.
+INFO 2024-03-14 21:58:40,725 autoreload 5940 13044 Watching for file changes with StatReloader
+INFO 2024-03-14 22:02:50,073 autoreload 5940 13044 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 22:02:50,837 autoreload 3164 18184 Watching for file changes with StatReloader
+INFO 2024-03-14 22:04:12,699 autoreload 3164 18184 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-14 22:04:13,955 autoreload 11904 4028 Watching for file changes with StatReloader
+INFO 2024-03-17 18:14:24,641 autoreload 16332 12724 Watching for file changes with StatReloader
+ERROR 2024-03-17 18:14:36,024 log 16332 15952 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-17 18:14:36,028 basehttp 16332 15952 "GET / HTTP/1.1" 500 63516
+WARNING 2024-03-17 18:14:38,532 log 16332 15952 Not Found: /favicon.ico
+WARNING 2024-03-17 18:14:38,534 basehttp 16332 15952 "GET /favicon.ico HTTP/1.1" 404 2784
+INFO 2024-03-17 18:17:51,982 basehttp 16332 10404 "GET /login HTTP/1.1" 301 0
+INFO 2024-03-17 18:17:52,026 basehttp 16332 11552 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-17 18:17:56,084 basehttp 16332 13324 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-17 18:18:14,272 basehttp 16332 15524 "POST /login/ HTTP/1.1" 200 1190
+INFO 2024-03-17 18:18:26,933 basehttp 16332 8156 "GET /register HTTP/1.1" 301 0
+INFO 2024-03-17 18:18:26,973 basehttp 16332 8376 "GET /register/ HTTP/1.1" 200 2186
+INFO 2024-03-17 18:22:27,303 autoreload 15980 16540 Watching for file changes with StatReloader
+INFO 2024-03-17 18:25:52,093 autoreload 5660 17248 Watching for file changes with StatReloader
+INFO 2024-03-17 18:26:01,791 basehttp 5660 924 "GET /admin HTTP/1.1" 301 0
+INFO 2024-03-17 18:26:01,811 basehttp 5660 5388 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-03-17 18:26:01,884 basehttp 5660 5388 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4356
+INFO 2024-03-17 18:26:02,259 basehttp 5660 5388 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-03-17 18:26:02,264 basehttp 5660 5388 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-03-17 18:26:02,280 basehttp 5660 6812 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-03-17 18:26:02,280 basehttp 5660 13444 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-03-17 18:26:02,288 basehttp 5660 16892 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-03-17 18:26:02,291 basehttp 5660 12612 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-03-17 18:26:02,292 basehttp 5660 12744 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-03-17 18:26:09,584 basehttp 5660 12744 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-03-17 18:26:09,615 basehttp 5660 12744 "GET /admin/ HTTP/1.1" 200 5941
+INFO 2024-03-17 18:26:09,752 basehttp 5660 12744 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-03-17 18:26:09,770 basehttp 5660 12744 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-03-17 18:26:09,770 basehttp 5660 12612 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-03-17 18:30:18,188 autoreload 5660 17248 C:\Users\Mi\dj_itog\recipe_site\recipesapp\admin.py changed, reloading.
+INFO 2024-03-17 18:30:18,891 autoreload 9232 8864 Watching for file changes with StatReloader
+INFO 2024-03-17 18:30:43,856 autoreload 9232 8864 C:\Users\Mi\dj_itog\recipe_site\recipesapp\admin.py changed, reloading.
+INFO 2024-03-17 18:30:44,531 autoreload 16252 10616 Watching for file changes with StatReloader
+INFO 2024-03-17 18:30:49,880 basehttp 16252 4136 "GET /admin/ HTTP/1.1" 200 7116
+INFO 2024-03-17 18:33:26,794 basehttp 16252 4136 "GET /admin/recipesapp/category/ HTTP/1.1" 200 8312
+INFO 2024-03-17 18:33:26,994 basehttp 16252 17348 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 18:33:27,157 basehttp 16252 4136 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-03-17 18:33:27,160 basehttp 16252 4136 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-03-17 18:33:27,163 basehttp 16252 4136 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-03-17 18:33:27,168 basehttp 16252 4136 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-03-17 18:33:27,171 basehttp 16252 7704 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-03-17 18:33:27,177 basehttp 16252 10152 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-03-17 18:33:27,179 basehttp 16252 1996 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-03-17 18:33:27,183 basehttp 16252 17348 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-03-17 18:33:27,185 basehttp 16252 11144 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-03-17 18:33:27,231 basehttp 16252 11144 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-03-17 18:33:27,238 basehttp 16252 11144 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-03-17 18:33:29,928 basehttp 16252 11144 "GET /admin/recipesapp/recipe/ HTTP/1.1" 200 8298
+INFO 2024-03-17 18:33:30,070 basehttp 16252 11144 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 18:33:31,862 basehttp 16252 11144 "GET /admin/recipesapp/recipe/add/ HTTP/1.1" 200 14977
+INFO 2024-03-17 18:33:31,987 basehttp 16252 11144 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-03-17 18:33:31,991 basehttp 16252 17348 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 18:33:31,992 basehttp 16252 11144 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-03-17 18:33:31,999 basehttp 16252 11144 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-03-17 18:33:32,009 basehttp 16252 11144 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-03-17 18:33:32,011 basehttp 16252 17348 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-03-17 18:34:38,148 basehttp 16252 17348 "GET /admin/recipesapp/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4446
+INFO 2024-03-17 18:34:38,290 basehttp 16252 17348 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 18:34:44,351 basehttp 16252 17348 "POST /admin/recipesapp/category/add/?_to_field=id&_popup=1 HTTP/1.1" 200 374
+INFO 2024-03-17 18:34:44,480 basehttp 16252 17348 "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+INFO 2024-03-17 18:36:13,791 basehttp 16252 16984 "POST /admin/recipesapp/recipe/add/ HTTP/1.1" 302 0
+INFO 2024-03-17 18:36:13,817 basehttp 16252 16984 "GET /admin/recipesapp/recipe/ HTTP/1.1" 200 10029
+INFO 2024-03-17 18:36:13,992 basehttp 16252 16984 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 18:36:14,099 basehttp 16252 16984 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-03-17 18:42:47,477 autoreload 16252 10616 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 18:42:48,255 autoreload 3460 5432 Watching for file changes with StatReloader
+INFO 2024-03-17 18:43:21,781 autoreload 3460 5432 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 18:43:22,505 autoreload 10144 8584 Watching for file changes with StatReloader
+INFO 2024-03-17 18:45:11,588 autoreload 10144 8584 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 18:45:12,278 autoreload 4508 6812 Watching for file changes with StatReloader
+ERROR 2024-03-17 18:47:08,800 log 4508 6668 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-17 18:47:08,801 basehttp 4508 6668 "GET / HTTP/1.1" 500 63657
+INFO 2024-03-17 18:47:14,929 basehttp 4508 6668 "GET /register/ HTTP/1.1" 200 2186
+INFO 2024-03-17 18:47:38,468 basehttp 4508 6668 "POST /register/ HTTP/1.1" 200 2355
+INFO 2024-03-17 18:47:51,785 basehttp 4508 6668 "POST /register/ HTTP/1.1" 200 2403
+INFO 2024-03-17 18:48:17,714 basehttp 4508 6668 "POST /register/ HTTP/1.1" 302 0
+ERROR 2024-03-17 18:48:17,746 log 4508 6668 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-17 18:48:17,747 basehttp 4508 6668 "GET / HTTP/1.1" 500 63958
+INFO 2024-03-17 18:49:14,576 basehttp 4508 6668 "GET /login/ HTTP/1.1" 200 933
+ERROR 2024-03-17 18:49:32,039 log 4508 6668 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 27, in login_view
+    login(request, user)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 152, in login
+    user_logged_in.send(sender=user.__class__, request=request, user=user)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\models.py", line 23, in update_last_login
+    user.save(update_fields=["last_login"])
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1036, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1101, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-03-17 18:49:32,053 basehttp 4508 6668 "POST /login/ HTTP/1.1" 500 165163
+WARNING 2024-03-17 18:50:00,138 log 4508 6668 Forbidden (CSRF token from POST incorrect.): /login/
+WARNING 2024-03-17 18:50:00,138 basehttp 4508 6668 "POST /login/ HTTP/1.1" 403 2559
+INFO 2024-03-17 18:50:02,686 basehttp 4508 6668 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-03-17 18:50:13,550 basehttp 4508 6668 "POST /login/ HTTP/1.1" 302 0
+ERROR 2024-03-17 18:50:13,591 log 4508 6668 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-03-17 18:50:13,593 basehttp 4508 6668 "GET / HTTP/1.1" 500 63955
+INFO 2024-03-17 18:50:57,027 basehttp 4508 6668 "GET /recipe/1 HTTP/1.1" 301 0
+ERROR 2024-03-17 18:50:57,081 log 4508 14816 Internal Server Error: /recipe/1/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 66, in recipe_detail
+    return render(request, 'recipes/recipe_detail.html', {'recipe': recipe})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: recipes/recipe_detail.html
+ERROR 2024-03-17 18:50:57,083 basehttp 4508 14816 "GET /recipe/1/ HTTP/1.1" 500 82234
+INFO 2024-03-17 18:53:00,779 autoreload 9164 15068 Watching for file changes with StatReloader
+ERROR 2024-03-17 18:53:03,416 log 9164 17068 Internal Server Error: /recipe/1/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 66, in recipe_detail
+    return render(request, 'recipes/recipe_detail.html', {'recipe': recipe})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: recipes/recipe_detail.html
+ERROR 2024-03-17 18:53:03,420 basehttp 9164 17068 "GET /recipe/1/ HTTP/1.1" 500 82371
+INFO 2024-03-17 18:54:55,521 autoreload 9164 15068 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 18:54:56,261 autoreload 17176 2292 Watching for file changes with StatReloader
+ERROR 2024-03-17 18:55:00,782 log 17176 10984 Internal Server Error: /recipe/1/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 66, in recipe_detail
+    return render(request, 'recipes_detail.html', {'recipe': recipe})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: recipes_detail.html
+ERROR 2024-03-17 18:55:00,785 basehttp 17176 10984 "GET /recipe/1/ HTTP/1.1" 500 82223
+INFO 2024-03-17 18:57:27,173 autoreload 10840 12660 Watching for file changes with StatReloader
+INFO 2024-03-17 18:57:29,186 basehttp 10840 2844 "GET /recipe/1/ HTTP/1.1" 200 481
+WARNING 2024-03-17 18:57:29,354 log 10840 2844 Not Found: /media/media/4Of1mOQ2uSg0QgJhTJfpuIfpL4TZ6Lj__NP2XFxgZ6WHhmwCACG_s1CjHJw8ucYkX8L7qj6Yt_yaqffsm1uODxBE.jpg
+WARNING 2024-03-17 18:57:29,355 basehttp 10840 2844 "GET /media/media/4Of1mOQ2uSg0QgJhTJfpuIfpL4TZ6Lj__NP2XFxgZ6WHhmwCACG_s1CjHJw8ucYkX8L7qj6Yt_yaqffsm1uODxBE.jpg HTTP/1.1" 404 3261
+INFO 2024-03-17 19:00:41,784 basehttp 10840 6352 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:00:41,920 log 10840 6352 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:00:41,921 basehttp 10840 6352 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:00:42,498 basehttp 10840 6352 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:00:42,632 log 10840 6352 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:00:42,633 basehttp 10840 6352 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:43,693 basehttp 10840 5356 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:43,858 log 10840 5356 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:43,859 basehttp 10840 5356 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:44,535 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:44,674 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:44,674 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:44,862 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:44,987 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:44,988 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:45,072 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:45,202 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:45,203 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:45,303 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:45,422 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:45,423 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:45,509 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:45,641 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:45,641 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:45,678 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:45,798 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:45,798 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:45,854 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:45,977 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:45,977 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:46,090 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:46,220 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:46,220 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:46,330 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:46,450 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:46,450 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:46,519 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:46,640 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:46,640 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:46,711 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:46,834 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:46,840 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:10:46,916 basehttp 10840 18672 "GET /recipe/1/ HTTP/1.1" 200 397
+WARNING 2024-03-17 19:10:47,044 log 10840 18672 Not Found: /media/media/test.png
+WARNING 2024-03-17 19:10:47,044 basehttp 10840 18672 "GET /media/media/test.png HTTP/1.1" 404 3009
+INFO 2024-03-17 19:14:31,855 autoreload 10840 12660 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 19:14:32,590 autoreload 5560 6876 Watching for file changes with StatReloader
+INFO 2024-03-17 19:14:56,505 autoreload 5560 6876 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 19:14:57,163 autoreload 18872 18628 Watching for file changes with StatReloader
+INFO 2024-03-17 19:15:13,591 basehttp 18872 7908 "GET /recipe/1/ HTTP/1.1" 200 397
+INFO 2024-03-17 19:15:13,792 basehttp 18872 7908 "GET /media/media/test.png HTTP/1.1" 200 140194
+WARNING 2024-03-17 19:17:52,269 log 18872 3932 Not Found: /favicon.ico
+WARNING 2024-03-17 19:17:52,271 basehttp 18872 3932 "GET /favicon.ico HTTP/1.1" 404 3155
+INFO 2024-03-17 19:21:26,253 basehttp 18872 17580 "GET /recipe/1/ HTTP/1.1" 200 432
+INFO 2024-03-17 19:21:28,556 basehttp 18872 17580 "GET /recipe/1/ HTTP/1.1" 200 432
+INFO 2024-03-17 19:21:58,474 basehttp 18872 18596 "GET /recipe/1/ HTTP/1.1" 200 799
+INFO 2024-03-17 19:22:16,775 autoreload 15684 14532 Watching for file changes with StatReloader
+INFO 2024-03-17 19:22:18,052 basehttp 15684 10032 "GET /recipe/1/ HTTP/1.1" 200 801
+INFO 2024-03-17 19:22:19,176 basehttp 15684 10032 "GET /recipe/1/ HTTP/1.1" 200 801
+INFO 2024-03-17 19:22:23,222 basehttp 15684 5952 "GET /recipe/1/ HTTP/1.1" 200 801
+INFO 2024-03-17 19:22:25,911 basehttp 15684 5952 "GET /recipe/1/ HTTP/1.1" 200 801
+WARNING 2024-03-17 19:25:06,247 log 15684 19884 Not Found: /recipe/2/
+WARNING 2024-03-17 19:25:06,248 basehttp 15684 19884 "GET /recipe/2/ HTTP/1.1" 404 3144
+INFO 2024-03-17 19:35:45,980 basehttp 15684 20252 "GET /recipe/1/ HTTP/1.1" 200 799
+INFO 2024-03-17 19:35:51,248 basehttp 15684 1852 "GET /admin/recipesapp/recipe/1/change/ HTTP/1.1" 302 0
+INFO 2024-03-17 19:35:51,306 basehttp 15684 1852 "GET /admin/login/?next=/admin/recipesapp/recipe/1/change/ HTTP/1.1" 200 3990
+INFO 2024-03-17 19:35:54,256 basehttp 15684 1852 "POST /admin/login/?next=/admin/recipesapp/recipe/1/change/ HTTP/1.1" 302 0
+INFO 2024-03-17 19:35:54,313 basehttp 15684 1852 "GET /admin/recipesapp/recipe/1/change/ HTTP/1.1" 200 15716
+INFO 2024-03-17 19:35:54,460 basehttp 15684 1852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 19:36:14,634 basehttp 15684 19856 "POST /admin/recipesapp/recipe/1/change/ HTTP/1.1" 302 0
+INFO 2024-03-17 19:36:14,674 basehttp 15684 19856 "GET /admin/recipesapp/recipe/ HTTP/1.1" 200 10031
+INFO 2024-03-17 19:36:14,858 basehttp 15684 19856 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 19:36:18,491 basehttp 15684 17500 "GET /recipe/1/ HTTP/1.1" 200 791
+INFO 2024-03-17 19:36:18,672 basehttp 15684 17500 "GET /media/media/beef.jpg HTTP/1.1" 200 26626
+INFO 2024-03-17 19:36:20,178 basehttp 15684 17500 "GET /recipe/1/ HTTP/1.1" 200 791
+INFO 2024-03-17 19:36:20,309 basehttp 15684 17500 "GET /media/media/beef.jpg HTTP/1.1" 304 0
+INFO 2024-03-17 19:36:38,421 basehttp 15684 4868 "GET /admin/recipesapp/recipe/1/change/ HTTP/1.1" 200 15708
+INFO 2024-03-17 19:36:38,565 basehttp 15684 4868 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 19:36:44,851 basehttp 15684 4868 "POST /admin/recipesapp/recipe/1/change/ HTTP/1.1" 302 0
+INFO 2024-03-17 19:36:44,873 basehttp 15684 4868 "GET /admin/recipesapp/recipe/ HTTP/1.1" 200 10031
+INFO 2024-03-17 19:36:45,012 basehttp 15684 4868 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-03-17 19:36:52,394 basehttp 15684 17712 "GET /recipe/1/ HTTP/1.1" 200 795
+INFO 2024-03-17 19:36:52,532 basehttp 15684 17712 "GET /media/media/beef.jpg HTTP/1.1" 304 0
+INFO 2024-03-17 19:53:00,035 autoreload 15684 14532 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 19:53:00,847 autoreload 15148 15584 Watching for file changes with StatReloader
+ERROR 2024-03-17 19:53:13,559 log 15148 5184 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 52, in recipe_create_view
+    return render(request, 'recipe_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 1096, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2024-03-17 19:53:13,566 basehttp 15148 5184 "GET /recipe/new/ HTTP/1.1" 500 142206
+INFO 2024-03-17 19:56:05,055 autoreload 4392 20196 Watching for file changes with StatReloader
+ERROR 2024-03-17 19:56:23,473 log 4392 16700 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 52, in recipe_create_view
+    return render(request, 'recipe_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 737, in resolve
+    new_obj = func(obj, *arg_vals)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+                      ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\conf\__init__.py", line 91, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+ERROR 2024-03-17 19:56:23,497 basehttp 4392 16700 "GET /recipe/new/ HTTP/1.1" 500 127964
+INFO 2024-03-17 19:56:49,283 autoreload 4392 20196 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-17 19:56:49,987 autoreload 5052 11136 Watching for file changes with StatReloader
+ERROR 2024-03-17 19:56:53,960 log 5052 16388 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 737, in resolve
+    new_obj = func(obj, *arg_vals)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 58, in as_crispy_form
+    template = uni_form_template(template_pack)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 21, in uni_form_template
+    return get_template("%s/uni_form.html" % template_pack)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/uni_form.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 52, in recipe_create_view
+    return render(request, 'recipe_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/uni_form.html
+ERROR 2024-03-17 19:56:53,968 basehttp 5052 16388 "GET /recipe/new/ HTTP/1.1" 500 131896
+INFO 2024-03-17 20:01:11,729 autoreload 5052 11136 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-03-17 20:01:12,393 autoreload 3732 2076 Watching for file changes with StatReloader
+INFO 2024-03-17 20:01:16,607 basehttp 3732 20392 "GET /recipe/new/ HTTP/1.1" 200 1499
+INFO 2024-03-17 20:06:37,061 basehttp 3732 12576 "GET /recipe/new/ HTTP/1.1" 200 2604
+ERROR 2024-03-17 20:07:33,594 log 3732 19404 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: recipesapp_recipe.author_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 50, in recipe_create_view
+    form.save()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: recipesapp_recipe.author_id
+ERROR 2024-03-17 20:07:33,600 basehttp 3732 19404 "POST /recipe/new/ HTTP/1.1" 500 155541
+INFO 2024-03-17 20:10:13,374 autoreload 3732 2076 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 20:10:14,075 autoreload 17464 7624 Watching for file changes with StatReloader
+ERROR 2024-03-17 20:10:18,722 log 17464 14532 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 54, in recipe_create_view
+    return redirect('recipe_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_list' not found. 'recipe_list' is not a valid view function or pattern name.
+ERROR 2024-03-17 20:10:18,725 basehttp 17464 14532 "POST /recipe/new/ HTTP/1.1" 500 88370
+ERROR 2024-03-17 20:10:26,975 log 17464 16736 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 54, in recipe_create_view
+    return redirect('recipe_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_list' not found. 'recipe_list' is not a valid view function or pattern name.
+ERROR 2024-03-17 20:10:26,977 basehttp 17464 16736 "POST /recipe/new/ HTTP/1.1" 500 88370
+INFO 2024-03-17 20:12:33,121 autoreload 17464 7624 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 20:12:33,770 autoreload 19664 280 Watching for file changes with StatReloader
+INFO 2024-03-17 20:12:37,241 basehttp 19664 14816 "GET /recipe/new/ HTTP/1.1" 200 2604
+ERROR 2024-03-17 20:12:56,436 log 19664 17024 Internal Server Error: /recipe/new/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 54, in recipe_create_view
+    return redirect('recipe_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_list' not found. 'recipe_list' is not a valid view function or pattern name.
+ERROR 2024-03-17 20:12:56,439 basehttp 19664 17024 "POST /recipe/new/ HTTP/1.1" 500 93336
+INFO 2024-03-17 20:14:31,864 autoreload 19664 280 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 20:14:32,524 autoreload 21072 21076 Watching for file changes with StatReloader
+INFO 2024-03-17 20:19:46,803 autoreload 21072 21076 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-03-17 20:19:47,448 autoreload 21184 8760 Watching for file changes with StatReloader
+INFO 2024-03-17 20:20:42,689 autoreload 21184 8760 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 20:20:43,487 autoreload 18332 3136 Watching for file changes with StatReloader
+INFO 2024-03-17 20:20:52,428 basehttp 18332 6564 "GET /recipes HTTP/1.1" 301 0
+INFO 2024-03-17 20:20:52,449 basehttp 18332 17636 "GET /recipes/ HTTP/1.1" 200 735
+INFO 2024-03-17 20:20:54,929 basehttp 18332 11556 "GET /recipe/3/ HTTP/1.1" 200 774
+INFO 2024-03-17 20:20:55,120 basehttp 18332 11556 "GET /media/media/carrot_LQzd8VP.jpg HTTP/1.1" 200 425884
+INFO 2024-03-17 20:20:57,987 basehttp 18332 11556 "GET /recipe/4/ HTTP/1.1" 200 731
+INFO 2024-03-17 20:20:58,117 basehttp 18332 11556 "GET /media/media/beef_TaDxU4D.jpg HTTP/1.1" 200 26626
+INFO 2024-03-17 20:21:01,467 basehttp 18332 11556 "GET /recipe/3/ HTTP/1.1" 200 774
+INFO 2024-03-17 20:21:05,968 basehttp 18332 19052 "GET /recipe/2/ HTTP/1.1" 200 766
+INFO 2024-03-17 20:21:06,105 basehttp 18332 19052 "GET /media/media/carrot.jpg HTTP/1.1" 200 425884
+INFO 2024-03-17 20:21:10,846 basehttp 18332 19052 "GET /recipe/1/ HTTP/1.1" 200 795
+INFO 2024-03-17 20:21:10,975 basehttp 18332 19052 "GET /media/media/beef.jpg HTTP/1.1" 304 0
+INFO 2024-03-17 20:24:14,600 autoreload 18332 3136 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-03-17 20:24:15,358 autoreload 13256 20356 Watching for file changes with StatReloader
+INFO 2024-04-04 00:18:36,582 autoreload 4980 16756 Watching for file changes with StatReloader
+ERROR 2024-04-04 00:18:53,423 log 4980 18680 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-04-04 00:18:53,427 basehttp 4980 18680 "GET / HTTP/1.1" 500 63516
+WARNING 2024-04-04 00:18:54,392 log 4980 9556 Not Found: /favicon.ico
+WARNING 2024-04-04 00:18:54,405 basehttp 4980 9556 "GET /favicon.ico HTTP/1.1" 404 3706
+WARNING 2024-04-04 00:18:54,464 log 4980 18680 Not Found: /favicon.ico
+WARNING 2024-04-04 00:18:54,541 basehttp 4980 18680 "GET /favicon.ico HTTP/1.1" 404 3706
+INFO 2024-04-04 00:19:18,957 basehttp 4980 14260 "GET /recipes HTTP/1.1" 301 0
+INFO 2024-04-04 00:19:18,984 basehttp 4980 16044 "GET /recipes/ HTTP/1.1" 200 735
+INFO 2024-04-04 00:19:22,695 basehttp 4980 16044 "GET /recipe/1/ HTTP/1.1" 200 795
+INFO 2024-04-04 00:19:22,878 basehttp 4980 16044 "GET /media/media/beef.jpg HTTP/1.1" 200 26626
+INFO 2024-04-04 00:19:25,530 basehttp 4980 17900 "GET /recipe/2/ HTTP/1.1" 200 766
+INFO 2024-04-04 00:19:25,675 basehttp 4980 17900 "GET /media/media/carrot.jpg HTTP/1.1" 200 425884
+INFO 2024-04-04 00:19:30,275 basehttp 4980 17900 "GET /recipe/3/ HTTP/1.1" 200 774
+INFO 2024-04-04 00:19:30,422 basehttp 4980 17900 "GET /media/media/carrot_LQzd8VP.jpg HTTP/1.1" 200 425884
+INFO 2024-04-04 00:19:32,938 basehttp 4980 17900 "GET /recipe/4/ HTTP/1.1" 200 731
+INFO 2024-04-04 00:19:33,115 basehttp 4980 17900 "GET /media/media/beef_TaDxU4D.jpg HTTP/1.1" 200 26626
+INFO 2024-04-04 00:19:36,578 basehttp 4980 6212 "GET /recipe/1/ HTTP/1.1" 200 795
+INFO 2024-04-04 00:19:46,964 basehttp 4980 624 "GET /register HTTP/1.1" 301 0
+INFO 2024-04-04 00:19:47,015 basehttp 4980 13516 "GET /register/ HTTP/1.1" 200 2186
+ERROR 2024-04-04 00:20:16,115 log 4980 9396 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 14, in register
+    user = form.save()
+           ^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-04-04 00:20:16,121 basehttp 4980 9396 "POST /register/ HTTP/1.1" 500 137132
+INFO 2024-04-04 00:20:44,544 basehttp 4980 15392 "POST /register/ HTTP/1.1" 302 0
+ERROR 2024-04-04 00:20:44,581 log 4980 15392 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: mock() takes 0 positional arguments but 1 was given
+ERROR 2024-04-04 00:20:44,582 basehttp 4980 15392 "GET / HTTP/1.1" 500 63956
+INFO 2024-04-04 00:34:35,236 autoreload 4980 16756 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 00:34:36,179 autoreload 1836 16288 Watching for file changes with StatReloader
+INFO 2024-04-04 00:35:32,404 autoreload 1836 16288 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-04-04 00:35:33,064 autoreload 20068 19344 Watching for file changes with StatReloader
+WARNING 2024-04-04 00:35:36,534 log 20068 18168 Not Found: /
+WARNING 2024-04-04 00:35:36,535 basehttp 20068 18168 "GET / HTTP/1.1" 404 3660
+INFO 2024-04-04 00:35:58,470 basehttp 20068 14136 "GET /register/ HTTP/1.1" 200 2186
+INFO 2024-04-04 00:36:05,908 basehttp 20068 11272 "GET /login HTTP/1.1" 301 0
+INFO 2024-04-04 00:36:05,918 basehttp 20068 14680 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-04-04 00:36:16,621 basehttp 20068 10044 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:36:16,634 basehttp 20068 10044 "GET /home/ HTTP/1.1" 200 1687
+INFO 2024-04-04 00:36:30,499 basehttp 20068 4468 "GET /recipe/4/ HTTP/1.1" 200 731
+INFO 2024-04-04 00:36:53,871 basehttp 20068 10420 "GET /recipe/new HTTP/1.1" 301 0
+INFO 2024-04-04 00:36:53,901 basehttp 20068 4528 "GET /recipe/new/ HTTP/1.1" 200 2604
+INFO 2024-04-04 00:37:32,470 basehttp 20068 17088 "POST /recipe/new/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:37:32,479 basehttp 20068 17088 "GET /recipes/ HTTP/1.1" 200 840
+INFO 2024-04-04 00:37:39,331 basehttp 20068 17088 "GET /recipe/5/ HTTP/1.1" 200 773
+INFO 2024-04-04 00:37:39,527 basehttp 20068 17088 "GET /media/media/test_d4Dbu7S.png HTTP/1.1" 200 140194
+INFO 2024-04-04 00:38:07,133 basehttp 20068 10948 "GET /recipe/5/edit HTTP/1.1" 301 0
+INFO 2024-04-04 00:38:07,150 basehttp 20068 17676 "GET /recipe/5/edit/ HTTP/1.1" 200 2912
+INFO 2024-04-04 00:38:20,248 basehttp 20068 9892 "GET /media/media/test_d4Dbu7S.png HTTP/1.1" 304 0
+INFO 2024-04-04 00:38:42,977 basehttp 20068 14936 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:38:42,985 basehttp 20068 14936 "GET /recipes/ HTTP/1.1" 200 840
+INFO 2024-04-04 00:38:45,062 basehttp 20068 14936 "GET /recipe/5/ HTTP/1.1" 200 786
+INFO 2024-04-04 00:38:45,214 basehttp 20068 14936 "GET /media/media/test_d4Dbu7S.png HTTP/1.1" 304 0
+INFO 2024-04-04 00:38:46,709 basehttp 20068 14936 "GET /recipe/5/ HTTP/1.1" 200 786
+INFO 2024-04-04 00:38:52,734 basehttp 20068 5608 "GET /recipe/5/edit/ HTTP/1.1" 200 2921
+INFO 2024-04-04 00:39:25,685 basehttp 20068 7736 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:39:25,696 basehttp 20068 7736 "GET /recipes/ HTTP/1.1" 200 861
+INFO 2024-04-04 00:39:27,471 basehttp 20068 7736 "GET /recipe/5/ HTTP/1.1" 200 798
+INFO 2024-04-04 00:39:34,087 basehttp 20068 8828 "GET /recipe/5/edit/ HTTP/1.1" 200 2711
+INFO 2024-04-04 00:39:42,453 basehttp 20068 13372 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:39:42,461 basehttp 20068 13372 "GET /recipes/ HTTP/1.1" 200 861
+INFO 2024-04-04 00:39:43,800 basehttp 20068 13372 "GET /recipe/5/ HTTP/1.1" 200 798
+INFO 2024-04-04 00:40:01,102 basehttp 20068 16336 "GET /recipe/5/edit/ HTTP/1.1" 200 2711
+INFO 2024-04-04 00:40:05,017 basehttp 20068 10116 "GET /recipe/1/edit/ HTTP/1.1" 200 2933
+INFO 2024-04-04 00:40:13,259 basehttp 20068 19640 "POST /recipe/1/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:40:13,268 basehttp 20068 19640 "GET /recipes/ HTTP/1.1" 200 863
+INFO 2024-04-04 00:40:15,084 basehttp 20068 19640 "GET /recipe/1/ HTTP/1.1" 200 799
+INFO 2024-04-04 00:41:17,515 basehttp 20068 15884 "GET /recipe/1/edit/ HTTP/1.1" 200 2935
+INFO 2024-04-04 00:41:20,390 basehttp 20068 15884 "GET /recipe/new/ HTTP/1.1" 200 2604
+INFO 2024-04-04 00:41:24,252 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:25,134 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:25,627 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:26,215 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:26,766 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:27,417 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:28,065 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:29,028 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:29,881 basehttp 20068 20108 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:41:33,457 basehttp 20068 8960 "GET /recipe/3/ HTTP/1.1" 200 774
+INFO 2024-04-04 00:41:38,382 basehttp 20068 8960 "GET /recipe/2/ HTTP/1.1" 200 766
+INFO 2024-04-04 00:41:44,480 basehttp 20068 13828 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-04-04 00:42:11,511 basehttp 20068 6788 "GET /logout/ HTTP/1.1" 200 729
+INFO 2024-04-04 00:42:13,252 basehttp 20068 1768 "POST /logout/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:42:13,260 basehttp 20068 1768 "GET /home/ HTTP/1.1" 200 1876
+INFO 2024-04-04 00:42:19,383 basehttp 20068 1768 "GET /recipe/1/ HTTP/1.1" 200 799
+INFO 2024-04-04 00:42:38,922 basehttp 20068 11952 "GET /recipe/1/edit HTTP/1.1" 301 0
+INFO 2024-04-04 00:42:38,939 basehttp 20068 18944 "GET /recipe/1/edit/ HTTP/1.1" 200 2935
+INFO 2024-04-04 00:42:50,635 basehttp 20068 17356 "POST /recipe/1/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:42:50,643 basehttp 20068 17356 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 00:42:52,537 basehttp 20068 18476 "GET /recipe/1/ HTTP/1.1" 200 807
+INFO 2024-04-04 00:51:58,283 basehttp 20068 15468 "GET /home HTTP/1.1" 301 0
+INFO 2024-04-04 00:51:58,305 basehttp 20068 18476 "GET /home/ HTTP/1.1" 200 1922
+INFO 2024-04-04 00:52:06,411 basehttp 20068 1852 "GET /login/ HTTP/1.1" 200 933
+ERROR 2024-04-04 00:52:14,982 log 20068 1852 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 27, in login_view
+    login(request, user)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 126, in login
+    request.session.cycle_key()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 304, in cycle_key
+    self.create()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 54, in create
+    self.save(must_create=True)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 85, in save
+    with transaction.atomic(using=using):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+INFO 2024-04-04 00:52:14,995 basehttp 20068 1852 - Broken pipe from ('127.0.0.1', 61634)
+INFO 2024-04-04 00:52:28,963 basehttp 20068 13928 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-04-04 00:52:28,975 basehttp 20068 13928 "GET /home/ HTTP/1.1" 200 1919
+INFO 2024-04-04 00:56:45,001 basehttp 20068 1504 "GET /home/ HTTP/1.1" 200 2044
+INFO 2024-04-04 00:59:20,063 autoreload 20068 19344 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 00:59:20,976 autoreload 12604 4908 Watching for file changes with StatReloader
+INFO 2024-04-04 00:59:30,720 autoreload 12604 4908 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 00:59:31,392 autoreload 10232 19944 Watching for file changes with StatReloader
+INFO 2024-04-04 00:59:35,145 basehttp 10232 2924 "GET /home/ HTTP/1.1" 200 2044
+INFO 2024-04-04 00:59:46,395 basehttp 10232 19444 "GET /recipe/3/ HTTP/1.1" 200 774
+INFO 2024-04-04 00:59:48,296 basehttp 10232 19444 "GET /recipe/2/ HTTP/1.1" 200 766
+INFO 2024-04-04 01:00:35,334 autoreload 10232 19944 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:00:35,981 autoreload 16416 16472 Watching for file changes with StatReloader
+INFO 2024-04-04 01:00:41,117 basehttp 16416 19424 "GET /logout/ HTTP/1.1" 200 729
+INFO 2024-04-04 01:00:43,328 basehttp 16416 19424 "POST /logout/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:00:43,338 basehttp 16416 19424 "GET /home/ HTTP/1.1" 200 2047
+INFO 2024-04-04 01:00:51,463 basehttp 16416 2164 "GET /recipe/new/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:00:51,482 basehttp 16416 2164 "GET /login/?next=/recipe/new/ HTTP/1.1" 200 933
+INFO 2024-04-04 01:01:18,353 basehttp 16416 9808 "GET /recipe/5/ HTTP/1.1" 200 798
+INFO 2024-04-04 01:01:21,233 basehttp 16416 19316 "GET /recipe/5/edit/ HTTP/1.1" 200 2711
+INFO 2024-04-04 01:03:01,741 autoreload 16416 16472 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:03:02,458 autoreload 17940 13060 Watching for file changes with StatReloader
+INFO 2024-04-04 01:03:29,875 autoreload 17940 13060 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:03:30,511 autoreload 5320 17688 Watching for file changes with StatReloader
+ERROR 2024-04-04 01:03:33,359 log 5320 10072 Internal Server Error: /recipe/5/edit/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 79, in recipe_update_view
+    if recipe.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Recipe' object has no attribute 'user'
+ERROR 2024-04-04 01:03:33,362 basehttp 5320 10072 "GET /recipe/5/edit/ HTTP/1.1" 500 68019
+INFO 2024-04-04 01:04:20,943 autoreload 5320 17688 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:04:21,659 autoreload 5252 20424 Watching for file changes with StatReloader
+WARNING 2024-04-04 01:04:23,919 log 5252 18968 Forbidden: /recipe/5/edit/
+WARNING 2024-04-04 01:04:23,920 basehttp 5252 18968 "GET /recipe/5/edit/ HTTP/1.1" 403 0
+WARNING 2024-04-04 01:04:27,189 log 5252 18968 Forbidden: /recipe/5/edit/
+WARNING 2024-04-04 01:04:27,190 basehttp 5252 18968 "GET /recipe/5/edit/ HTTP/1.1" 403 0
+INFO 2024-04-04 01:04:34,556 basehttp 5252 13864 "GET /login/ HTTP/1.1" 200 933
+INFO 2024-04-04 01:04:37,362 basehttp 5252 13864 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:04:37,374 basehttp 5252 13864 "GET /home/ HTTP/1.1" 200 2044
+INFO 2024-04-04 01:04:41,699 basehttp 5252 17140 "GET /recipe/5/ HTTP/1.1" 200 798
+INFO 2024-04-04 01:04:46,080 basehttp 5252 17140 "GET /recipe/5/edit/ HTTP/1.1" 200 2711
+WARNING 2024-04-04 01:04:54,081 log 5252 13616 Forbidden: /recipe/2/edit/
+WARNING 2024-04-04 01:04:54,081 basehttp 5252 13616 "GET /recipe/2/edit/ HTTP/1.1" 403 0
+WARNING 2024-04-04 01:05:07,528 log 5252 10048 Forbidden: /recipe/2/edit/
+WARNING 2024-04-04 01:05:07,528 basehttp 5252 10048 "GET /recipe/2/edit/ HTTP/1.1" 403 0
+INFO 2024-04-04 01:05:34,379 basehttp 5252 13588 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:05:34,389 basehttp 5252 13588 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:05:36,914 basehttp 5252 13588 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:05:40,244 basehttp 5252 13104 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:05:54,222 basehttp 5252 19908 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:05:54,230 basehttp 5252 19908 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:05:55,496 basehttp 5252 19908 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:05:57,144 basehttp 5252 19908 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:06:02,570 basehttp 5252 10876 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:09:29,577 basehttp 5252 17508 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:09:34,330 basehttp 5252 9020 "GET /recipe/2/ HTTP/1.1" 200 787
+INFO 2024-04-04 01:09:37,567 basehttp 5252 9020 "GET /recipe/4/ HTTP/1.1" 200 752
+INFO 2024-04-04 01:09:46,315 basehttp 5252 12356 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:09:58,962 basehttp 5252 15608 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:10:05,758 basehttp 5252 18984 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:10:05,768 basehttp 5252 18984 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:10:08,659 basehttp 5252 18984 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:10:11,372 basehttp 5252 15048 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:10:32,910 basehttp 5252 13700 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:10:32,919 basehttp 5252 13700 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:10:35,075 basehttp 5252 13700 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:10:37,957 basehttp 5252 13700 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:10:41,000 basehttp 5252 1856 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:10:41,008 basehttp 5252 1856 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:10:42,296 basehttp 5252 1856 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:11:16,213 basehttp 5252 19068 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:21:24,521 basehttp 5252 16996 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:21:24,530 basehttp 5252 16996 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:21:28,812 basehttp 5252 16996 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:28:13,014 autoreload 5252 20424 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:28:13,902 autoreload 20068 17688 Watching for file changes with StatReloader
+INFO 2024-04-04 01:28:19,806 basehttp 20068 2928 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:28:26,964 basehttp 20068 2928 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:28:26,975 basehttp 20068 2928 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:28:29,778 basehttp 20068 2928 "GET /recipe/5/ HTTP/1.1" 200 849
+INFO 2024-04-04 01:28:29,968 basehttp 20068 2928 "GET /media/media/apple.jpg HTTP/1.1" 200 16874
+INFO 2024-04-04 01:28:36,094 basehttp 20068 2928 "GET /recipe/5/ HTTP/1.1" 200 849
+INFO 2024-04-04 01:28:36,237 basehttp 20068 2928 "GET /media/media/apple.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:28:43,122 basehttp 20068 8628 "GET /recipe/5/edit/ HTTP/1.1" 200 2935
+INFO 2024-04-04 01:28:59,726 basehttp 20068 15624 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:28:59,737 basehttp 20068 15624 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:29:01,312 basehttp 20068 15624 "GET /recipe/5/ HTTP/1.1" 200 799
+INFO 2024-04-04 01:29:03,505 basehttp 20068 15624 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:29:04,650 basehttp 20068 15624 "GET /recipe/5/edit/ HTTP/1.1" 200 2712
+INFO 2024-04-04 01:29:10,649 basehttp 20068 1444 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:29:10,657 basehttp 20068 1444 "GET /recipes/ HTTP/1.1" 200 867
+INFO 2024-04-04 01:29:12,107 basehttp 20068 1444 "GET /recipe/5/ HTTP/1.1" 200 855
+INFO 2024-04-04 01:29:12,236 basehttp 20068 1444 "GET /media/media/qwertyllboy.png HTTP/1.1" 200 4109
+INFO 2024-04-04 01:29:58,759 basehttp 20068 8316 "GET /recipe/5/ HTTP/1.1" 200 855
+INFO 2024-04-04 01:29:58,945 basehttp 20068 8316 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:30:01,526 basehttp 20068 8316 "GET /recipe/1/ HTTP/1.1" 200 828
+INFO 2024-04-04 01:30:03,952 basehttp 20068 8316 "GET /recipe/2/ HTTP/1.1" 200 787
+INFO 2024-04-04 01:30:06,774 basehttp 20068 8316 "GET /recipe/4/ HTTP/1.1" 200 752
+INFO 2024-04-04 01:32:07,547 autoreload 20068 17688 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 01:32:08,203 autoreload 1892 19516 Watching for file changes with StatReloader
+INFO 2024-04-04 01:32:59,432 autoreload 1892 19516 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-04-04 01:33:00,059 autoreload 17824 14556 Watching for file changes with StatReloader
+INFO 2024-04-04 01:33:07,752 basehttp 17824 19144 "GET /myrecipes HTTP/1.1" 301 0
+INFO 2024-04-04 01:33:07,772 basehttp 17824 19800 "GET /myrecipes/ HTTP/1.1" 200 558
+INFO 2024-04-04 01:34:34,604 basehttp 17824 8064 "GET /myrecipes/ HTTP/1.1" 200 591
+INFO 2024-04-04 01:36:13,515 basehttp 17824 11536 "GET /myrecipes/ HTTP/1.1" 200 697
+INFO 2024-04-04 01:36:13,679 basehttp 17824 11536 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:36:58,119 basehttp 17824 8852 "GET /myrecipes/ HTTP/1.1" 200 798
+INFO 2024-04-04 01:36:58,294 basehttp 17824 8852 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:37:37,178 basehttp 17824 2404 "GET /recipe/new/ HTTP/1.1" 200 2604
+INFO 2024-04-04 01:37:57,548 basehttp 17824 19088 "POST /recipe/new/ HTTP/1.1" 302 0
+INFO 2024-04-04 01:37:57,557 basehttp 17824 19088 "GET /recipes/ HTTP/1.1" 200 965
+INFO 2024-04-04 01:37:59,435 basehttp 17824 19088 "GET /recipe/6/ HTTP/1.1" 200 767
+INFO 2024-04-04 01:37:59,639 basehttp 17824 19088 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 200 23726
+INFO 2024-04-04 01:38:03,588 basehttp 17824 19616 "GET /recipe/new/ HTTP/1.1" 200 2604
+INFO 2024-04-04 01:38:05,682 basehttp 17824 19616 "GET /myrecipes/ HTTP/1.1" 200 1221
+INFO 2024-04-04 01:38:05,813 basehttp 17824 19616 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:38:05,813 basehttp 17824 1796 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:39:05,702 basehttp 17824 13160 "GET /myrecipes/ HTTP/1.1" 200 1203
+INFO 2024-04-04 01:39:05,894 basehttp 17824 13160 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:39:05,894 basehttp 17824 16572 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:39:12,050 basehttp 17824 16572 "GET /recipe/6/ HTTP/1.1" 200 767
+INFO 2024-04-04 01:39:12,190 basehttp 17824 16572 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:40:53,547 basehttp 17824 20152 "GET /myrecipes/ HTTP/1.1" 200 983
+INFO 2024-04-04 01:40:53,706 basehttp 17824 20152 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:40:53,706 basehttp 17824 13352 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:41:16,464 basehttp 17824 16248 "GET /myrecipes/ HTTP/1.1" 200 983
+INFO 2024-04-04 01:41:16,623 basehttp 17824 16248 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:43:04,066 basehttp 17824 16248 "GET /myrecipes/ HTTP/1.1" 200 1077
+INFO 2024-04-04 01:43:04,232 basehttp 17824 16248 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 01:43:04,232 basehttp 17824 15612 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 01:43:06,649 basehttp 17824 15612 "GET /recipe/5/ HTTP/1.1" 200 855
+INFO 2024-04-04 01:43:10,855 basehttp 17824 17296 "GET /recipe/6/ HTTP/1.1" 200 767
+INFO 2024-04-04 02:13:18,017 basehttp 17824 4632 "GET /home/ HTTP/1.1" 200 3733
+INFO 2024-04-04 02:13:18,243 basehttp 17824 4632 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 02:13:42,418 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:42,561 basehttp 17824 9992 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 02:13:43,485 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:44,088 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3768
+INFO 2024-04-04 02:13:44,601 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3733
+INFO 2024-04-04 02:13:46,340 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3736
+INFO 2024-04-04 02:13:46,838 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3615
+INFO 2024-04-04 02:13:47,575 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3768
+INFO 2024-04-04 02:13:47,879 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3768
+INFO 2024-04-04 02:13:48,122 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:48,338 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3736
+INFO 2024-04-04 02:13:48,533 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3615
+INFO 2024-04-04 02:13:48,745 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:48,932 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:49,137 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:49,318 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3615
+INFO 2024-04-04 02:13:49,514 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:49,704 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:49,910 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3736
+INFO 2024-04-04 02:13:50,105 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3736
+INFO 2024-04-04 02:13:50,300 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:50,482 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3752
+INFO 2024-04-04 02:13:50,694 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3733
+INFO 2024-04-04 02:13:50,929 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3615
+INFO 2024-04-04 02:13:51,095 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:51,310 basehttp 17824 9992 "GET /home/ HTTP/1.1" 200 3725
+INFO 2024-04-04 02:13:52,097 basehttp 17824 12504 "GET /home/ HTTP/1.1" 200 3733
+INFO 2024-04-04 02:16:56,737 basehttp 17824 17840 "GET /home/ HTTP/1.1" 200 4024
+INFO 2024-04-04 02:17:32,422 basehttp 17824 2848 "GET /home/ HTTP/1.1" 200 3903
+INFO 2024-04-04 02:17:32,649 basehttp 17824 2848 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 02:17:36,961 basehttp 17824 2848 "GET /home/ HTTP/1.1" 200 4056
+INFO 2024-04-04 02:18:15,078 basehttp 17824 2504 "GET /home/ HTTP/1.1" 200 3903
+INFO 2024-04-04 02:18:15,890 basehttp 17824 2504 "GET /home/ HTTP/1.1" 200 4059
+INFO 2024-04-04 02:18:16,102 basehttp 17824 2504 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 02:18:16,757 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 4027
+INFO 2024-04-04 02:18:17,423 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 4016
+INFO 2024-04-04 02:18:18,852 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 4059
+INFO 2024-04-04 02:18:19,882 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 3906
+INFO 2024-04-04 02:18:25,156 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 4059
+INFO 2024-04-04 02:18:26,306 basehttp 17824 5804 "GET /home/ HTTP/1.1" 200 4017
+INFO 2024-04-04 02:18:27,054 basehttp 17824 10292 "GET /home/ HTTP/1.1" 200 4028
+INFO 2024-04-04 02:18:28,015 basehttp 17824 10292 "GET /home/ HTTP/1.1" 200 4028
+INFO 2024-04-04 02:18:31,721 basehttp 17824 10292 "GET /home/ HTTP/1.1" 200 3906
+INFO 2024-04-04 02:19:54,939 basehttp 17824 4976 "GET /home/ HTTP/1.1" 200 4027
+INFO 2024-04-04 02:20:23,943 basehttp 17824 19808 "GET /home/ HTTP/1.1" 200 4022
+INFO 2024-04-04 02:20:26,075 basehttp 17824 19808 "GET /home/ HTTP/1.1" 200 4065
+INFO 2024-04-04 02:20:49,709 basehttp 17824 9516 "GET /home/ HTTP/1.1" 200 4029
+INFO 2024-04-04 02:22:07,795 basehttp 17824 19100 "GET /home/ HTTP/1.1" 200 4059
+INFO 2024-04-04 02:22:13,497 basehttp 17824 19100 "GET /home/ HTTP/1.1" 200 4059
+INFO 2024-04-04 02:23:04,114 basehttp 17824 15136 "GET /home/ HTTP/1.1" 200 4111
+INFO 2024-04-04 02:23:04,312 basehttp 17824 15136 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 02:25:30,412 basehttp 17824 14160 "GET /home/ HTTP/1.1" 200 4222
+INFO 2024-04-04 02:25:30,592 basehttp 17824 14160 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 02:25:32,801 basehttp 17824 14160 "GET /recipe/2/ HTTP/1.1" 200 787
+INFO 2024-04-04 02:26:20,381 basehttp 17824 5648 "GET /home/ HTTP/1.1" 200 4347
+INFO 2024-04-04 02:26:23,551 basehttp 17824 5648 "GET /recipe/1/ HTTP/1.1" 200 828
+INFO 2024-04-04 02:28:19,512 basehttp 17824 9748 "GET /home/ HTTP/1.1" 200 4758
+INFO 2024-04-04 02:28:19,711 basehttp 17824 9748 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+ERROR 2024-04-04 02:36:06,693 log 17824 3176 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 53, in home_view
+    return render(request, 'home.html', {'recipes': recipes})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+ERROR 2024-04-04 02:36:06,702 basehttp 17824 3176 "GET /home/ HTTP/1.1" 500 175229
+INFO 2024-04-04 02:36:38,810 basehttp 17824 25484 "GET /home/ HTTP/1.1" 200 5037
+INFO 2024-04-04 02:36:38,991 basehttp 17824 25484 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 02:36:38,992 basehttp 17824 9068 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 02:36:54,982 basehttp 17824 18172 "GET /home/ HTTP/1.1" 200 5021
+INFO 2024-04-04 02:37:22,966 basehttp 17824 12656 "GET /home/ HTTP/1.1" 200 5037
+INFO 2024-04-04 02:37:23,963 basehttp 17824 17288 "GET /home/ HTTP/1.1" 200 5037
+INFO 2024-04-04 02:37:30,319 basehttp 17824 17288 "GET /home/ HTTP/1.1" 200 5036
+INFO 2024-04-04 02:37:36,503 basehttp 17824 17204 "GET /home/ HTTP/1.1" 200 4900
+INFO 2024-04-04 02:39:01,929 basehttp 17824 4252 "GET /recipes/ HTTP/1.1" 200 1163
+INFO 2024-04-04 02:39:47,233 basehttp 17824 26012 "GET /recipes/ HTTP/1.1" 200 1163
+ERROR 2024-04-04 02:39:49,544 log 17824 26100 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 53, in home_view
+    return render(request, 'home.html', {'recipes': recipes})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 51: 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-04-04 02:39:49,549 basehttp 17824 26100 "GET /home/ HTTP/1.1" 500 155189
+INFO 2024-04-04 02:40:28,295 basehttp 17824 17844 "GET /home/ HTTP/1.1" 200 2974
+INFO 2024-04-04 02:40:32,946 basehttp 17824 25772 "GET /home/ HTTP/1.1" 200 2978
+INFO 2024-04-04 02:41:03,132 basehttp 17824 20348 "GET /recipe/4/ HTTP/1.1" 200 950
+INFO 2024-04-04 02:41:35,040 basehttp 17824 26308 "GET /recipe/4/ HTTP/1.1" 200 952
+INFO 2024-04-04 02:43:09,413 basehttp 17824 3204 "GET /recipe/4/ HTTP/1.1" 200 1635
+INFO 2024-04-04 02:47:10,693 basehttp 17824 6800 "GET /recipe/4/ HTTP/1.1" 200 1636
+INFO 2024-04-04 02:47:14,250 basehttp 17824 6800 "GET /recipe/4/ HTTP/1.1" 200 1636
+INFO 2024-04-04 02:47:32,845 basehttp 17824 10068 "GET /recipe/4/ HTTP/1.1" 200 1636
+INFO 2024-04-04 02:49:10,125 basehttp 17824 2476 "GET /recipe/4/ HTTP/1.1" 200 1636
+ERROR 2024-04-04 02:49:45,710 log 17824 21508 Internal Server Error: /recipe/5/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 93, in recipe_detail
+    return render(request, 'recipes_detail.html', {'recipe': recipe})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_delete' not found. 'recipe_delete' is not a valid view function or pattern name.
+ERROR 2024-04-04 02:49:45,716 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 500 164218
+ERROR 2024-04-04 02:50:00,062 log 17824 21508 Internal Server Error: /recipe/5/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 93, in recipe_detail
+    return render(request, 'recipes_detail.html', {'recipe': recipe})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'recipe_delete' not found. 'recipe_delete' is not a valid view function or pattern name.
+ERROR 2024-04-04 02:50:00,067 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 500 164355
+INFO 2024-04-04 02:50:01,540 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 200 1797
+INFO 2024-04-04 02:50:01,694 basehttp 17824 21508 "GET /media/media/qwertyllboy.png HTTP/1.1" 304 0
+INFO 2024-04-04 02:50:38,833 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 200 1797
+INFO 2024-04-04 02:50:39,795 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 200 1802
+INFO 2024-04-04 02:52:00,367 basehttp 17824 21508 "GET /recipe/5/edit/ HTTP/1.1" 200 3145
+INFO 2024-04-04 02:52:07,383 basehttp 17824 21508 "GET /recipe/5/edit/ HTTP/1.1" 200 3145
+INFO 2024-04-04 02:52:16,722 basehttp 17824 21508 "POST /recipe/5/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 02:52:16,735 basehttp 17824 21508 "GET /recipes/ HTTP/1.1" 200 1163
+INFO 2024-04-04 02:52:21,552 basehttp 17824 21508 "GET /recipe/5/ HTTP/1.1" 200 1797
+INFO 2024-04-04 02:52:21,716 basehttp 17824 21508 "GET /media/media/tomato.jpg HTTP/1.1" 200 249070
+INFO 2024-04-04 02:55:32,430 autoreload 17824 14556 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.
+INFO 2024-04-04 02:55:33,383 autoreload 24368 24128 Watching for file changes with StatReloader
+INFO 2024-04-04 02:56:29,083 autoreload 24368 24128 C:\Users\Mi\dj_itog\recipe_site\recipesapp\urls.py changed, reloading.
+INFO 2024-04-04 02:56:29,744 autoreload 18160 24620 Watching for file changes with StatReloader
+INFO 2024-04-04 02:56:54,855 basehttp 18160 9520 "GET /recipe/5/ HTTP/1.1" 200 1848
+INFO 2024-04-04 02:56:55,044 basehttp 18160 9520 "GET /media/media/tomato.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 02:56:58,173 basehttp 18160 9520 "GET /recipe/5/delete/ HTTP/1.1" 200 858
+INFO 2024-04-04 02:57:00,538 basehttp 18160 22064 "POST /recipe/5/delete/ HTTP/1.1" 302 0
+INFO 2024-04-04 02:57:00,551 basehttp 18160 22064 "GET /recipes/ HTTP/1.1" 200 1037
+WARNING 2024-04-04 02:57:05,944 log 18160 22064 Not Found: /recipe/5/delete/
+WARNING 2024-04-04 02:57:05,944 basehttp 18160 22064 "GET /recipe/5/delete/ HTTP/1.1" 404 4102
+INFO 2024-04-04 03:00:02,919 basehttp 18160 20624 "GET /recipes/ HTTP/1.1" 200 1308
+INFO 2024-04-04 03:00:11,824 basehttp 18160 20624 "GET /home/ HTTP/1.1" 200 3181
+INFO 2024-04-04 03:00:11,995 basehttp 18160 20624 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:00:13,178 basehttp 18160 20624 "GET /myrecipes/ HTTP/1.1" 200 1210
+INFO 2024-04-04 03:00:15,906 basehttp 18160 26076 "GET /recipes/ HTTP/1.1" 200 1308
+INFO 2024-04-04 03:00:17,418 basehttp 18160 26076 "GET /home/ HTTP/1.1" 200 3181
+INFO 2024-04-04 03:15:12,233 basehttp 18160 5876 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:15:12,452 basehttp 18160 5876 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:15:12,477 basehttp 18160 17916 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:15:13,340 basehttp 18160 17916 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:15:13,504 basehttp 18160 17916 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:16:22,460 basehttp 18160 14172 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:16:22,640 basehttp 18160 14172 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:16:51,944 basehttp 18160 21408 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:16:52,159 basehttp 18160 21408 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:16:52,974 basehttp 18160 24944 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:16:53,166 basehttp 18160 24944 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:20,751 basehttp 18160 15468 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:19:20,927 basehttp 18160 15468 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:21,477 basehttp 18160 18288 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:19:21,657 basehttp 18160 18288 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:21,918 basehttp 18160 23604 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:19:22,059 basehttp 18160 23604 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:22,318 basehttp 18160 20000 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:19:22,466 basehttp 18160 13280 "GET /static/css/styles.css HTTP/1.1" 404 1801
+WARNING 2024-04-04 03:19:24,185 basehttp 18160 15640 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:43,959 basehttp 18160 6448 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:19:44,176 basehttp 18160 6448 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:19:44,915 basehttp 18160 12832 "GET /home/ HTTP/1.1" 200 3096
+WARNING 2024-04-04 03:19:45,169 basehttp 18160 12832 "GET /static/css/styles.csss HTTP/1.1" 404 1804
+INFO 2024-04-04 03:20:05,918 basehttp 18160 21472 "GET /home/ HTTP/1.1" 200 3096
+WARNING 2024-04-04 03:20:06,094 basehttp 18160 21472 "GET /static/css/styles.csss HTTP/1.1" 404 1804
+INFO 2024-04-04 03:20:06,806 basehttp 18160 21244 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:20:06,964 basehttp 18160 21244 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:20:08,208 basehttp 18160 12208 "GET /home/ HTTP/1.1" 200 3095
+WARNING 2024-04-04 03:20:08,354 basehttp 18160 12208 "GET /static/css/styles.css HTTP/1.1" 404 1801
+INFO 2024-04-04 03:21:52,618 autoreload 18160 24620 C:\Users\Mi\dj_itog\recipe_site\recipe_site\settings.py changed, reloading.
+INFO 2024-04-04 03:21:53,458 autoreload 21356 24300 Watching for file changes with StatReloader
+INFO 2024-04-04 03:21:59,792 basehttp 21356 14904 "GET /home/ HTTP/1.1" 200 3095
+INFO 2024-04-04 03:22:00,024 basehttp 21356 14904 "GET /static/css/styles.css HTTP/1.1" 200 1257
+INFO 2024-04-04 03:22:22,690 basehttp 21356 3116 "GET /recipe/1/ HTTP/1.1" 200 1902
+INFO 2024-04-04 03:22:27,925 basehttp 21356 3116 "GET /recipe/4/ HTTP/1.1" 200 1826
+INFO 2024-04-04 03:23:38,744 basehttp 21356 15240 "GET /recipe/1/ HTTP/1.1" 200 1902
+INFO 2024-04-04 03:23:38,949 basehttp 21356 15240 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:23:51,839 basehttp 21356 10088 "GET /recipe/1/ HTTP/1.1" 200 1902
+INFO 2024-04-04 03:23:56,892 basehttp 21356 17564 "GET /recipe/new/ HTTP/1.1" 200 2987
+INFO 2024-04-04 03:24:22,838 basehttp 21356 8648 "POST /recipe/new/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:24:22,849 basehttp 21356 8648 "GET /recipes/ HTTP/1.1" 200 1318
+INFO 2024-04-04 03:24:23,032 basehttp 21356 8648 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:24:25,308 basehttp 21356 8648 "GET /recipe/7/ HTTP/1.1" 200 3589
+INFO 2024-04-04 03:24:25,482 basehttp 21356 8648 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 200 26626
+INFO 2024-04-04 03:24:36,908 basehttp 21356 15460 "GET /recipe/7/edit/ HTTP/1.1" 200 4916
+INFO 2024-04-04 03:24:45,989 basehttp 21356 25780 "POST /recipe/7/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:24:46,002 basehttp 21356 25780 "GET /recipes/ HTTP/1.1" 200 1318
+INFO 2024-04-04 03:24:47,466 basehttp 21356 25780 "GET /recipe/7/ HTTP/1.1" 200 3606
+INFO 2024-04-04 03:24:47,616 basehttp 21356 25780 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:20,625 basehttp 21356 9620 "GET /recipe/7/ HTTP/1.1" 200 3626
+INFO 2024-04-04 03:26:20,810 basehttp 21356 25820 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:20,811 basehttp 21356 9620 "GET /static/css/styles.css HTTP/1.1" 200 1524
+INFO 2024-04-04 03:26:41,379 basehttp 21356 5396 "GET /myrecipes/ HTTP/1.1" 200 2324
+INFO 2024-04-04 03:26:41,567 basehttp 21356 5396 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:41,576 basehttp 21356 5396 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:41,577 basehttp 21356 22496 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:45,068 basehttp 21356 23116 "GET /logout/ HTTP/1.1" 200 1112
+INFO 2024-04-04 03:26:45,223 basehttp 21356 23116 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:47,090 basehttp 21356 23116 "POST /logout/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:26:47,101 basehttp 21356 23116 "GET /home/ HTTP/1.1" 200 3034
+INFO 2024-04-04 03:26:50,770 basehttp 21356 23116 "GET /home/ HTTP/1.1" 200 3953
+INFO 2024-04-04 03:26:50,940 basehttp 21356 23116 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:54,053 basehttp 21356 13060 "GET /recipes/ HTTP/1.1" 200 1257
+INFO 2024-04-04 03:26:54,203 basehttp 21356 13060 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:26:55,692 basehttp 21356 13060 "GET /home/ HTTP/1.1" 200 3034
+INFO 2024-04-04 03:26:58,977 basehttp 21356 13060 "GET /recipe/6/ HTTP/1.1" 200 1800
+INFO 2024-04-04 03:26:59,122 basehttp 21356 13060 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:27:04,180 basehttp 21356 20676 "GET /home/ HTTP/1.1" 200 3966
+INFO 2024-04-04 03:27:04,330 basehttp 21356 11700 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:27:04,331 basehttp 21356 20676 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:27:05,681 basehttp 21356 20676 "GET /login/ HTTP/1.1" 200 1255
+INFO 2024-04-04 03:27:08,636 basehttp 21356 20676 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:27:08,646 basehttp 21356 20676 "GET /home/ HTTP/1.1" 200 4027
+INFO 2024-04-04 03:27:08,795 basehttp 21356 20676 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:28:00,623 basehttp 21356 23868 "GET /home/ HTTP/1.1" 200 4043
+INFO 2024-04-04 03:28:00,828 basehttp 21356 23868 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:28:00,831 basehttp 21356 15952 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:28:03,678 basehttp 21356 10800 "GET /login/ HTTP/1.1" 200 1316
+INFO 2024-04-04 03:28:08,883 basehttp 21356 10800 "GET /myrecipes/ HTTP/1.1" 200 2324
+INFO 2024-04-04 03:28:10,593 basehttp 21356 10800 "GET /recipe/6/ HTTP/1.1" 200 1662
+INFO 2024-04-04 03:28:10,747 basehttp 21356 10800 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:28:20,673 basehttp 21356 9512 "GET /myrecipes/ HTTP/1.1" 200 2324
+INFO 2024-04-04 03:28:22,918 basehttp 21356 9512 "GET /recipe/7/ HTTP/1.1" 200 3318
+INFO 2024-04-04 03:28:23,079 basehttp 21356 22068 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:28:23,079 basehttp 21356 9512 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:31:26,760 basehttp 21356 10824 "GET /recipe/7/ HTTP/1.1" 200 3318
+INFO 2024-04-04 03:31:26,981 basehttp 21356 9116 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:31:26,982 basehttp 21356 10824 "GET /static/css/styles.css HTTP/1.1" 200 1552
+INFO 2024-04-04 03:31:38,214 basehttp 21356 5980 "GET /home/ HTTP/1.1" 200 4014
+INFO 2024-04-04 03:31:38,382 basehttp 21356 5980 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:31:55,732 basehttp 21356 26108 "GET /home/ HTTP/1.1" 200 4014
+INFO 2024-04-04 03:31:55,907 basehttp 21356 26108 "GET /static/css/styles.css HTTP/1.1" 200 1580
+INFO 2024-04-04 03:32:49,146 basehttp 21356 25496 "GET /home/ HTTP/1.1" 200 2009
+INFO 2024-04-04 03:32:49,343 basehttp 21356 25496 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:32:52,673 basehttp 21356 25496 "GET /home/ HTTP/1.1" 200 2937
+INFO 2024-04-04 03:32:52,822 basehttp 21356 25496 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:32:55,941 basehttp 21356 25496 "GET /home/ HTTP/1.1" 200 2937
+INFO 2024-04-04 03:32:56,095 basehttp 21356 25496 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:33:29,377 basehttp 21356 26400 "GET /recipe/7/ HTTP/1.1" 200 3318
+INFO 2024-04-04 03:33:29,577 basehttp 21356 26400 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:33:31,460 basehttp 21356 26400 "GET /recipe/7/edit/ HTTP/1.1" 200 4929
+INFO 2024-04-04 03:33:54,142 basehttp 21356 14924 "POST /recipe/7/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:33:54,153 basehttp 21356 14924 "GET /recipes/ HTTP/1.1" 200 1318
+INFO 2024-04-04 03:33:54,341 basehttp 21356 14924 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:33:56,674 basehttp 21356 14924 "GET /home/ HTTP/1.1" 200 2009
+INFO 2024-04-04 03:33:58,189 basehttp 21356 14924 "GET /home/ HTTP/1.1" 200 2034
+INFO 2024-04-04 03:33:58,333 basehttp 21356 14924 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:34:07,232 basehttp 21356 19204 "GET /home/ HTTP/1.1" 200 2034
+INFO 2024-04-04 03:34:07,373 basehttp 21356 19204 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:34:08,780 basehttp 21356 22832 "GET /home/ HTTP/1.1" 200 2047
+INFO 2024-04-04 03:34:16,590 basehttp 21356 22832 "GET /home/ HTTP/1.1" 200 2024
+INFO 2024-04-04 03:34:19,705 basehttp 21356 24000 "GET /home/ HTTP/1.1" 200 2019
+INFO 2024-04-04 03:34:26,256 basehttp 21356 24000 "GET /home/ HTTP/1.1" 200 2048
+INFO 2024-04-04 03:34:26,434 basehttp 21356 24000 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:34:27,627 basehttp 21356 24000 "GET /home/ HTTP/1.1" 200 2063
+INFO 2024-04-04 03:34:33,679 basehttp 21356 24720 "GET /home/ HTTP/1.1" 200 2009
+INFO 2024-04-04 03:34:35,036 basehttp 21356 24720 "GET /home/ HTTP/1.1" 200 2045
+INFO 2024-04-04 03:34:38,305 basehttp 21356 24720 "GET /home/ HTTP/1.1" 200 2050
+INFO 2024-04-04 03:34:47,000 basehttp 21356 20664 "GET /home/ HTTP/1.1" 200 2039
+INFO 2024-04-04 03:34:47,158 basehttp 21356 20664 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:36:49,624 basehttp 21356 1180 "GET /home/ HTTP/1.1" 200 2043
+INFO 2024-04-04 03:36:49,816 basehttp 21356 18392 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:36:49,817 basehttp 21356 1180 "GET /static/css/styles.css HTTP/1.1" 200 2068
+INFO 2024-04-04 03:37:18,718 basehttp 21356 22764 "GET /home/ HTTP/1.1" 200 2047
+INFO 2024-04-04 03:37:18,913 basehttp 21356 22764 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:37:43,450 basehttp 21356 20784 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:37:43,658 basehttp 21356 20784 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:38:14,565 basehttp 21356 21548 "GET /home/ HTTP/1.1" 200 2047
+INFO 2024-04-04 03:38:14,763 basehttp 21356 10824 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:38:14,763 basehttp 21356 26112 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:38:14,764 basehttp 21356 21548 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:38:26,428 basehttp 21356 17532 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:38:26,576 basehttp 21356 17532 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:40:35,671 basehttp 21356 4700 "GET /home/ HTTP/1.1" 200 2062
+INFO 2024-04-04 03:40:35,851 basehttp 21356 18756 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:40:35,852 basehttp 21356 4700 "GET /static/css/styles.css HTTP/1.1" 200 2266
+INFO 2024-04-04 03:40:49,778 basehttp 21356 15916 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:40:49,936 basehttp 21356 15916 "GET /static/css/styles.css HTTP/1.1" 200 2266
+INFO 2024-04-04 03:42:36,262 basehttp 21356 23548 "GET /home/ HTTP/1.1" 200 2024
+INFO 2024-04-04 03:42:36,485 basehttp 21356 23548 "GET /static/css/styles.css HTTP/1.1" 200 2291
+INFO 2024-04-04 03:43:11,438 basehttp 21356 18396 "GET /home/ HTTP/1.1" 200 2054
+INFO 2024-04-04 03:43:11,643 basehttp 21356 18396 "GET /static/css/styles.css HTTP/1.1" 200 2347
+INFO 2024-04-04 03:43:11,643 basehttp 21356 10088 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:43:23,607 basehttp 21356 3936 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:43:23,794 basehttp 21356 3936 "GET /static/css/styles.css HTTP/1.1" 200 2293
+INFO 2024-04-04 03:43:38,397 basehttp 21356 23740 "GET /home/ HTTP/1.1" 200 2024
+INFO 2024-04-04 03:43:38,591 basehttp 21356 23740 "GET /static/css/styles.css HTTP/1.1" 200 2292
+INFO 2024-04-04 03:43:59,046 basehttp 21356 19420 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:43:59,228 basehttp 21356 19420 "GET /static/css/styles.css HTTP/1.1" 200 2141
+INFO 2024-04-04 03:44:05,265 basehttp 21356 24464 "GET /home/ HTTP/1.1" 200 2049
+INFO 2024-04-04 03:44:05,457 basehttp 21356 24464 "GET /static/css/styles.css HTTP/1.1" 200 2141
+INFO 2024-04-04 03:44:17,206 basehttp 21356 5700 "GET /myrecipes/ HTTP/1.1" 200 1445
+INFO 2024-04-04 03:44:17,367 basehttp 21356 5700 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:44:19,095 basehttp 21356 5700 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:44:19,250 basehttp 21356 5700 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:44:20,736 basehttp 21356 5700 "GET /myrecipes/ HTTP/1.1" 200 1445
+INFO 2024-04-04 03:44:20,886 basehttp 21356 5700 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:44:24,213 basehttp 21356 5700 "GET /recipe/new/ HTTP/1.1" 200 3002
+INFO 2024-04-04 03:44:24,380 basehttp 21356 5700 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:44:30,244 basehttp 21356 23528 "GET /home/ HTTP/1.1" 200 2024
+INFO 2024-04-04 03:44:30,419 basehttp 21356 23528 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:44:32,260 basehttp 21356 23528 "GET /recipe/new/ HTTP/1.1" 200 3002
+INFO 2024-04-04 03:44:37,920 basehttp 21356 4648 "GET /home/ HTTP/1.1" 200 2078
+INFO 2024-04-04 03:44:38,074 basehttp 21356 4648 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:45:23,841 basehttp 21356 12892 "GET /recipe/1/ HTTP/1.1" 200 1629
+INFO 2024-04-04 03:45:24,036 basehttp 21356 12892 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:45:49,835 basehttp 21356 15944 "GET /home/ HTTP/1.1" 200 2054
+INFO 2024-04-04 03:45:50,020 basehttp 21356 6532 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:45:50,021 basehttp 21356 15944 "GET /static/css/styles.css HTTP/1.1" 200 2140
+INFO 2024-04-04 03:45:55,063 basehttp 21356 25848 "GET /home/ HTTP/1.1" 200 2049
+INFO 2024-04-04 03:45:55,225 basehttp 21356 25848 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:46:03,763 basehttp 21356 25848 "GET /home/ HTTP/1.1" 200 2078
+INFO 2024-04-04 03:46:03,938 basehttp 21356 25848 "GET /static/css/styles.css HTTP/1.1" 200 2141
+INFO 2024-04-04 03:46:32,298 basehttp 21356 13716 "GET /recipe/2/ HTTP/1.1" 200 1588
+INFO 2024-04-04 03:46:32,500 basehttp 21356 13716 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:47:10,139 basehttp 21356 25776 "GET /home/ HTTP/1.1" 200 2062
+INFO 2024-04-04 03:47:10,347 basehttp 21356 25776 "GET /static/css/styles.css HTTP/1.1" 200 2160
+INFO 2024-04-04 03:48:04,216 basehttp 21356 8948 "GET /home/ HTTP/1.1" 200 2078
+INFO 2024-04-04 03:48:04,429 basehttp 21356 23072 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:48:04,429 basehttp 21356 8948 "GET /static/css/styles.css HTTP/1.1" 200 2141
+INFO 2024-04-04 03:48:05,994 basehttp 21356 9320 "GET /home/ HTTP/1.1" 200 2058
+INFO 2024-04-04 03:48:06,155 basehttp 21356 9320 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:48:40,648 basehttp 21356 15460 "GET /recipe/new/ HTTP/1.1" 200 3002
+INFO 2024-04-04 03:48:40,834 basehttp 21356 15460 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:49:00,214 basehttp 21356 24124 "POST /recipe/new/ HTTP/1.1" 302 0
+INFO 2024-04-04 03:49:00,227 basehttp 21356 24124 "GET /recipes/ HTTP/1.1" 200 1424
+INFO 2024-04-04 03:49:00,416 basehttp 21356 24124 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:49:04,545 basehttp 21356 24124 "GET /home/ HTTP/1.1" 200 2018
+INFO 2024-04-04 03:49:04,829 basehttp 21356 24124 "GET /media/media/aboba.jpg HTTP/1.1" 200 2428737
+INFO 2024-04-04 03:49:08,752 basehttp 21356 21612 "GET /recipe/8/ HTTP/1.1" 200 1652
+INFO 2024-04-04 03:49:08,924 basehttp 21356 16448 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:49:08,924 basehttp 21356 21612 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:51:20,804 basehttp 21356 500 "GET /recipe/8/ HTTP/1.1" 200 1682
+INFO 2024-04-04 03:51:21,030 basehttp 21356 500 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:51:21,031 basehttp 21356 14672 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:53:00,314 basehttp 21356 9396 "GET /recipe/8/ HTTP/1.1" 200 1344
+INFO 2024-04-04 03:53:00,535 basehttp 21356 9396 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:53:00,536 basehttp 21356 15848 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:13,130 basehttp 21356 10580 "GET /home/ HTTP/1.1" 200 2056
+INFO 2024-04-04 03:55:13,340 basehttp 21356 10580 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:13,342 basehttp 21356 15396 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:13,342 basehttp 21356 18136 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:13,343 basehttp 21356 21528 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:27,768 basehttp 21356 21528 "GET /recipe/8/ HTTP/1.1" 200 1344
+INFO 2024-04-04 03:55:30,487 basehttp 21356 21528 "GET /home/ HTTP/1.1" 200 1994
+INFO 2024-04-04 03:55:57,128 basehttp 21356 21528 "GET /home/ HTTP/1.1" 200 2069
+INFO 2024-04-04 03:55:57,320 basehttp 21356 18136 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 03:55:57,322 basehttp 21356 21528 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 03:58:05,698 basehttp 21356 21528 "GET /recipe/new/ HTTP/1.1" 200 3002
+INFO 2024-04-04 03:58:05,890 basehttp 21356 21528 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:00:57,803 basehttp 21356 8064 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:00:57,997 basehttp 21356 8064 "GET /static/css/styles.css HTTP/1.1" 200 2749
+INFO 2024-04-04 04:01:27,708 basehttp 21356 15944 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:01:27,909 basehttp 21356 15944 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:01:46,331 basehttp 21356 23828 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:01:46,547 basehttp 21356 21372 "GET /static/css/styles.css HTTP/1.1" 200 2748
+INFO 2024-04-04 04:01:56,038 basehttp 21356 21372 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:01:56,239 basehttp 21356 21372 "GET /static/css/styles.css HTTP/1.1" 200 2748
+INFO 2024-04-04 04:02:00,686 basehttp 21356 25060 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:02:00,845 basehttp 21356 25060 "GET /static/css/styles.css HTTP/1.1" 200 2748
+INFO 2024-04-04 04:02:10,161 basehttp 21356 17072 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:02:10,326 basehttp 21356 17072 "GET /static/css/styles.css HTTP/1.1" 200 2748
+INFO 2024-04-04 04:04:07,834 basehttp 21356 9536 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:04:08,017 basehttp 21356 9536 "GET /static/css/styles.css HTTP/1.1" 200 2761
+INFO 2024-04-04 04:05:44,780 basehttp 21356 9772 "GET /recipe/new/ HTTP/1.1" 200 2090
+INFO 2024-04-04 04:05:44,964 basehttp 21356 9772 "GET /static/css/styles.css HTTP/1.1" 200 2787
+INFO 2024-04-04 04:09:18,156 basehttp 21356 19328 "GET /recipe/new/ HTTP/1.1" 200 2120
+INFO 2024-04-04 04:09:18,355 basehttp 21356 19328 "GET /static/css/styles.css HTTP/1.1" 200 2566
+INFO 2024-04-04 04:10:12,720 basehttp 21356 10992 "GET /recipe/new/ HTTP/1.1" 200 2120
+INFO 2024-04-04 04:10:12,927 basehttp 21356 10992 "GET /static/css/styles.css HTTP/1.1" 200 2695
+INFO 2024-04-04 04:10:13,874 basehttp 21356 10992 "GET /recipe/new/ HTTP/1.1" 200 2120
+INFO 2024-04-04 04:10:14,099 basehttp 21356 10992 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:10:23,974 basehttp 21356 24900 "GET /recipe/new/ HTTP/1.1" 200 2120
+INFO 2024-04-04 04:10:24,180 basehttp 21356 24900 "GET /static/css/styles.css HTTP/1.1" 200 2680
+INFO 2024-04-04 04:10:29,685 basehttp 21356 22480 "GET /recipe/new/ HTTP/1.1" 200 2120
+INFO 2024-04-04 04:10:29,908 basehttp 21356 22480 "GET /static/css/styles.css HTTP/1.1" 200 2568
+INFO 2024-04-04 04:10:49,205 basehttp 21356 21580 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:13:42,674 basehttp 21356 21312 "GET /recipe/new/ HTTP/1.1" 200 2125
+INFO 2024-04-04 04:13:42,888 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 200 2697
+INFO 2024-04-04 04:13:51,704 basehttp 21356 21312 "GET /recipe/new/ HTTP/1.1" 200 2125
+INFO 2024-04-04 04:13:51,867 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:14:46,203 basehttp 21356 21312 "GET /recipe/new/ HTTP/1.1" 200 2125
+INFO 2024-04-04 04:14:46,403 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 200 2721
+INFO 2024-04-04 04:16:32,723 basehttp 21356 21312 "GET /home/ HTTP/1.1" 200 2129
+INFO 2024-04-04 04:16:32,917 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:16:32,922 basehttp 21356 23724 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:16:32,923 basehttp 21356 21312 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:16:35,528 basehttp 21356 21312 "GET /myrecipes/ HTTP/1.1" 200 1691
+INFO 2024-04-04 04:16:35,706 basehttp 21356 21312 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:17:19,191 basehttp 21356 21312 "GET /myrecipes/ HTTP/1.1" 200 1691
+INFO 2024-04-04 04:17:19,411 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 200 2740
+INFO 2024-04-04 04:17:26,512 basehttp 21356 21312 "GET /myrecipes/ HTTP/1.1" 200 1691
+INFO 2024-04-04 04:17:26,687 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:19:04,942 basehttp 21356 21312 "GET /myrecipes/ HTTP/1.1" 200 1691
+INFO 2024-04-04 04:19:05,147 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 200 2853
+INFO 2024-04-04 04:19:12,329 basehttp 21356 21312 "GET /myrecipes/ HTTP/1.1" 200 1691
+INFO 2024-04-04 04:19:12,539 basehttp 21356 21312 "GET /static/css/styles.css HTTP/1.1" 200 2853
+INFO 2024-04-04 04:19:47,998 basehttp 21356 23432 "GET /myrecipes/ HTTP/1.1" 200 1702
+INFO 2024-04-04 04:19:48,209 basehttp 21356 9572 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:19:48,210 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:19:59,762 basehttp 21356 23432 "GET /recipe/7/ HTTP/1.1" 200 1493
+INFO 2024-04-04 04:19:59,935 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:20:02,250 basehttp 21356 23432 "GET /recipe/7/edit/ HTTP/1.1" 200 2535
+INFO 2024-04-04 04:20:11,214 basehttp 21356 23432 "POST /recipe/7/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 04:20:11,226 basehttp 21356 23432 "GET /recipes/ HTTP/1.1" 200 1424
+INFO 2024-04-04 04:20:11,410 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:20:13,789 basehttp 21356 23432 "GET /myrecipes/ HTTP/1.1" 200 1907
+INFO 2024-04-04 04:20:23,687 basehttp 21356 23432 "GET /myrecipes/ HTTP/1.1" 200 2173
+INFO 2024-04-04 04:20:23,871 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:20:30,052 basehttp 21356 23432 "GET /myrecipes/ HTTP/1.1" 200 2173
+INFO 2024-04-04 04:20:31,625 basehttp 21356 23432 "GET /myrecipes/ HTTP/1.1" 200 2439
+INFO 2024-04-04 04:20:31,776 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:20:51,114 basehttp 21356 23432 "GET /home/ HTTP/1.1" 200 2070
+INFO 2024-04-04 04:20:51,302 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:21:49,108 basehttp 21356 23432 "GET /home/ HTTP/1.1" 200 2053
+INFO 2024-04-04 04:21:49,350 basehttp 21356 23432 "GET /static/css/styles.css HTTP/1.1" 200 2860
+INFO 2024-04-04 04:22:16,028 basehttp 21356 22060 "GET /home/ HTTP/1.1" 200 2100
+INFO 2024-04-04 04:22:16,200 basehttp 21356 5688 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:22:16,202 basehttp 21356 22060 "GET /static/css/styles.css HTTP/1.1" 200 2853
+INFO 2024-04-04 04:22:34,870 basehttp 21356 22060 "GET /home/ HTTP/1.1" 200 2045
+INFO 2024-04-04 04:22:35,038 basehttp 21356 22060 "GET /static/css/styles.css HTTP/1.1" 200 2853
+INFO 2024-04-04 04:22:58,259 basehttp 21356 19036 "GET /myrecipes/ HTTP/1.1" 200 2439
+INFO 2024-04-04 04:22:58,455 basehttp 21356 9212 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:22:58,456 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:23:01,607 basehttp 21356 19036 "GET /recipes/ HTTP/1.1" 200 1424
+INFO 2024-04-04 04:23:01,776 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:25:00,628 basehttp 21356 19036 "GET /recipes/ HTTP/1.1" 200 3532
+INFO 2024-04-04 04:25:00,834 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:25:06,106 basehttp 21356 19036 "GET /myrecipes/ HTTP/1.1" 200 2439
+INFO 2024-04-04 04:25:08,915 basehttp 21356 19036 "GET /recipes/ HTTP/1.1" 200 3532
+INFO 2024-04-04 04:25:11,617 basehttp 21356 19036 "GET /myrecipes/ HTTP/1.1" 200 2439
+INFO 2024-04-04 04:25:13,737 basehttp 21356 19036 "GET /recipe/6/ HTTP/1.1" 200 1369
+INFO 2024-04-04 04:25:29,186 basehttp 21356 19036 "GET /recipe/6/edit/ HTTP/1.1" 200 2414
+INFO 2024-04-04 04:25:29,367 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:26:16,547 basehttp 21356 19036 "GET /recipe/6/edit/ HTTP/1.1" 200 2414
+INFO 2024-04-04 04:26:16,766 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 200 2853
+INFO 2024-04-04 04:26:18,617 basehttp 21356 19036 "GET /recipe/new/ HTTP/1.1" 200 2125
+INFO 2024-04-04 04:26:18,789 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:26:47,077 basehttp 21356 19036 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:29:11,773 autoreload 21356 24300 C:\Users\Mi\dj_itog\recipe_site\recipesapp\forms.py changed, reloading.
+INFO 2024-04-04 04:29:12,864 autoreload 2868 23996 Watching for file changes with StatReloader
+INFO 2024-04-04 04:29:13,467 basehttp 2868 8984 "GET /recipe/6/edit/ HTTP/1.1" 200 2531
+INFO 2024-04-04 04:29:13,660 basehttp 2868 8984 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:29:27,684 basehttp 2868 8984 "GET /recipe/6/edit/ HTTP/1.1" 200 2531
+INFO 2024-04-04 04:29:27,867 autoreload 2868 23996 C:\Users\Mi\dj_itog\recipe_site\recipesapp\forms.py changed, reloading.
+INFO 2024-04-04 04:29:28,535 autoreload 2848 22604 Watching for file changes with StatReloader
+INFO 2024-04-04 04:29:29,406 basehttp 2848 18332 "GET /recipe/6/edit/ HTTP/1.1" 200 2519
+INFO 2024-04-04 04:30:09,273 basehttp 2848 18332 "GET /recipe/new/ HTTP/1.1" 200 2230
+INFO 2024-04-04 04:30:09,500 basehttp 2848 18332 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:30:13,074 basehttp 2848 18332 "GET /myrecipes/ HTTP/1.1" 200 2439
+INFO 2024-04-04 04:30:13,251 basehttp 2848 18332 "GET /media/media/beef_4U1ON86.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:30:13,251 basehttp 2848 10164 "GET /media/media/aboba.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:30:16,467 basehttp 2848 18332 "GET /recipe/8/ HTTP/1.1" 200 1344
+INFO 2024-04-04 04:30:19,218 basehttp 2848 25120 "GET /recipe/8/edit/ HTTP/1.1" 200 2493
+INFO 2024-04-04 04:30:30,057 basehttp 2848 20364 "POST /recipe/8/edit/ HTTP/1.1" 302 0
+INFO 2024-04-04 04:30:30,070 basehttp 2848 20364 "GET /recipes/ HTTP/1.1" 200 3519
+INFO 2024-04-04 04:30:33,439 basehttp 2848 20364 "GET /myrecipes/ HTTP/1.1" 200 2426
+INFO 2024-04-04 04:30:33,606 basehttp 2848 20364 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:30:35,582 basehttp 2848 20364 "GET /recipe/8/ HTTP/1.1" 200 1342
+ERROR 2024-04-04 04:30:37,928 log 2848 20364 Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py", line 53, in home_view
+    return render(request, 'home.html', {'recipes': recipes})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\Mi\dj_itog\.venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+ERROR 2024-04-04 04:30:37,938 basehttp 2848 20364 "GET /home/ HTTP/1.1" 500 175998
+INFO 2024-04-04 04:32:24,884 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2200
+INFO 2024-04-04 04:32:25,084 basehttp 2848 23836 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:32:28,143 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2182
+INFO 2024-04-04 04:32:28,306 basehttp 2848 23836 "GET /media/media/PetRegistry_1.jpg HTTP/1.1" 304 0
+INFO 2024-04-04 04:32:30,409 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2192
+INFO 2024-04-04 04:32:34,085 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2166
+INFO 2024-04-04 04:32:34,796 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2240
+INFO 2024-04-04 04:32:35,279 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2248
+INFO 2024-04-04 04:32:35,815 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2212
+INFO 2024-04-04 04:32:36,510 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2158
+INFO 2024-04-04 04:32:37,114 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2196
+INFO 2024-04-04 04:32:37,572 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2158
+INFO 2024-04-04 04:32:38,305 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2196
+INFO 2024-04-04 04:32:38,888 basehttp 2848 23836 "GET /home/ HTTP/1.1" 200 2187
+INFO 2024-04-04 04:32:39,640 basehttp 2848 15568 "GET /home/ HTTP/1.1" 200 2162
+INFO 2024-04-04 04:32:40,411 basehttp 2848 15568 "GET /home/ HTTP/1.1" 200 2162
+INFO 2024-04-04 04:32:41,072 basehttp 2848 15568 "GET /home/ HTTP/1.1" 200 2212
+INFO 2024-04-04 04:32:41,741 basehttp 2848 15568 "GET /home/ HTTP/1.1" 200 2264
+INFO 2024-04-04 04:33:24,019 basehttp 2848 23132 "GET /home/ HTTP/1.1" 200 2166
+INFO 2024-04-04 04:33:24,201 basehttp 2848 23132 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:33:33,941 autoreload 17448 25592 Watching for file changes with StatReloader
+INFO 2024-04-04 04:33:36,140 basehttp 17448 19040 "GET /home/ HTTP/1.1" 200 2187
+INFO 2024-04-04 04:34:03,159 autoreload 13700 5732 Watching for file changes with StatReloader
+INFO 2024-04-04 04:34:05,632 basehttp 13700 18168 "GET /home/ HTTP/1.1" 200 2153
+INFO 2024-04-04 04:34:12,415 basehttp 13700 19900 "GET /logout/ HTTP/1.1" 200 1127
+INFO 2024-04-04 04:34:12,594 basehttp 13700 19900 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:34:17,669 basehttp 13700 19900 "POST /logout/ HTTP/1.1" 302 0
+INFO 2024-04-04 04:34:17,676 basehttp 13700 19900 "GET /home/ HTTP/1.1" 200 2077
+INFO 2024-04-04 04:34:25,171 basehttp 13700 22928 "GET /home/ HTTP/1.1" 200 2081
+INFO 2024-04-04 04:34:51,959 basehttp 13700 25656 "GET /home/ HTTP/1.1" 200 2174
+INFO 2024-04-04 04:34:56,107 basehttp 13700 25656 "GET /login/ HTTP/1.1" 200 1270
+INFO 2024-04-04 04:34:59,141 basehttp 13700 25656 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-04-04 04:34:59,152 basehttp 13700 25656 "GET /home/ HTTP/1.1" 200 2182
+INFO 2024-04-04 04:35:03,715 basehttp 13700 9364 "GET /recipes/ HTTP/1.1" 200 3519
+INFO 2024-04-04 04:35:03,897 basehttp 13700 9364 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2024-04-04 04:35:11,605 basehttp 13700 25160 "GET /myrecipes/ HTTP/1.1" 200 2426
+INFO 2024-04-04 04:35:14,289 basehttp 13700 25160 "GET /recipe/new/ HTTP/1.1" 200 2230
+INFO 2024-04-04 04:53:14,215 autoreload 13700 5732 C:\Users\Mi\dj_itog\recipe_site\recipesapp\views.py changed, reloading.

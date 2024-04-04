@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Мои рецепты</h1>
+<table>
+    <tr>
+        <th>Название</th>
+        <th>Изображение</th>
+        <th>Описание</th>
+    </tr>
+    {% for recipe in recipes %}
+    <tr>
+        <td><a href="{% url 'recipe_detail' recipe.id %}">
+            {{ recipe.title }} </a></td>
+        <td>
+            {% if recipe.image %}
+            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" width="200">
+            {% else %}
+            Изображение отсутствует
+            {% endif %}
+        </td>
+        <td>{{ recipe.description|truncatewords:150 }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="3">У вас пока нет рецептов.</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
