@@ -6,7 +6,7 @@ from .views import login_view, register, logout_view, home_view, recipe_detail, 
     recipe_list_view, user_recipes_view, recipe_delete_view
 
 urlpatterns = [
-                  path('home/', home_view, name='home'),
+                  path('', home_view, name='home'),
                   path('register/', register, name='register'),
                   path('login/', login_view, name='login'),
                   path('logout/', logout_view, name='logout'),
@@ -16,4 +16,4 @@ urlpatterns = [
                   path('recipes/', recipe_list_view, name='recipe_list'),
                   path('myrecipes/', user_recipes_view, name='user_recipes'),
                   path('recipe/<int:id>/delete/', recipe_delete_view, name='recipe_delete'),
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              ]

@@ -44,7 +44,7 @@ def logout_view(request):
 
 
 def home_view(request):
-    recipes = list(Recipe.objects.all())
+    recipes = list(Recipe.objects.all())  # Not for large bd, cuz metod getiing all rows from "Recipe" table
     shuffle(recipes)
     recipes = recipes[:5]
     return render(request, 'home.html', {'recipes': recipes})
@@ -88,11 +88,13 @@ def recipe_list_view(request):
     return render(request, 'recipe_list.html', {'recipes': recipes})
 
 
+@login_required
 def user_recipes_view(request):
     recipes = Recipe.objects.filter(author=request.user)
     return render(request, 'user_recipes.html', {'recipes': recipes})
 
 
+@login_required
 def recipe_delete_view(request, id):
     recipe = get_object_or_404(Recipe, id=id)
     if recipe.author != request.user:
